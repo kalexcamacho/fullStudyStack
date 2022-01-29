@@ -11,6 +11,11 @@ Referentes:
 
  - https://www.amazon.com/ :
 
- - https://librerianacional.com/ :
+ - https://librerianacional.com/ : La Librería Nacional se destaca también por la novedosa integración de heladerías y cafeterías dentro de sus sedes (en las de Cali particularmente); en la actualidad cuentan con 31 Agencias a nivel Nacional, librerías en seis ciudades (Bogotá, Cali, Medellín, Barranquilla, Cartagena yPereira) situadas en los mejores centros comerciales de cada una de estas ciudades, y con la Tienda Virtual: www.librerianacional.com, con la que llegan a sus clientes de cualquier parte del mundo.
 
- - https://listado.mercadolibre.com.co/ :
+ - https://listado.mercadolibre.com.co/ : Mercado libre es una plataforma que permite a los usuarios: anunciar, comprar, pagar y vender productos y servicios a través de Internet de una manera muy práctica. En otras palabras, es un «centro comercial virtual» en el que todos pueden ser comerciantes, compradores y anunciantes al mismo tiempo.
+
+
+
+
+

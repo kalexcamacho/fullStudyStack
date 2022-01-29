@@ -21,7 +21,8 @@
     - https://listado.mercadolibre.com.co/ :
 
 4. Integrantes del equipo:
-    -Kevin Alexander Camacho Bernal: Ingeniero en Energía de la Universidad Autónoma de Bucaramanga, estudiante de Desarrollo Web Full Stack, amante del ultimate freesbe, del deporte y de los videojuegos.
+    - Kevin Alexander Camacho Bernal: Ingeniero en Energía de la Universidad Autónoma de Bucaramanga, estudiante de Desarrollo Web Full Stack, amante del ultimate freesbe, del deporte y de los videojuegos.
+    - Cesar Corregidor Carreño: Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.
 
 5. Productos y/o servicios ofrecidos:
     Paquetes de cursos,con material en texto plano, y contenido audiovisual extra, para aprendizaje asincrónico.

@@ -5,7 +5,7 @@
     Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.
 
 3. Referentes:
-    - https://www.udemy.com/ :
+    - https://www.udemy.com/ : Udemy es una plataforma de aprendizaje en línea. Está dirigido a adultos profesionales. Udemy proporciona herramientas para que los usuarios puedan crear un curso, promocionarlo y ganar dinero con gastos de inscripción de los estudiantes.
 
     - https://www.edx.org/es : Edx es un proveedor de cursos en línea masivos y abiertos. Muchas universidades y organizaciones top a nivel mundial ofrecen sus cursos en línea de alta calidad dirigido a cualquier persona que desee aprender.
     Cuenta con más de 3500 cursos, que tienen contetnido de texto y video, foros de discusión y evaluaciones. 
@@ -26,6 +26,8 @@
     - Jesus Alberto Ramirez Carvajal: Ingeniero en sistemas y telecomunicaciones de la universidad Católica de Pereira.
     
     - Cesar Corregidor Carreño: Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.
+
+    - Miguel Angel Rueda Diaz: Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack, amante de la naturaleza y el deporte. 
 
 5. Productos y/o servicios ofrecidos:
     Paquetes de cursos,con material en texto plano, y contenido audiovisual extra, para aprendizaje asincrónico.

@@ -27,7 +27,7 @@
     
     - Cesar Corregidor Carreño: Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.
 
-    - Miguel Angel Rueda Diaz: Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack, amante de la naturaleza y el deporte. 
+    - Miguel Angel Rueda Diaz: Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack. 
 
 5. Productos y/o servicios ofrecidos:
     Paquetes de cursos,con material en texto plano, y contenido audiovisual extra, para aprendizaje asincrónico.

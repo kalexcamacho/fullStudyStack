@@ -28,4 +28,6 @@ alt="itoo" width="200"/>
 |4.2 Jesus Alberto Ramirez Carvajal | Ingeniero en sistemas y telecomunicaciones de la universidad Católica de Pereira.|
 |4.3 Cesar Corregidor Carreño | Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.| 
 |4.5 Miguel Angel Rueda Diaz | Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack|
+| | | | 
+|-|-|-|
 |5. Productos y/o servicios ofrecidos | Paquetes de cursos,con material en texto plano, y contenido audiovisual extra, para aprendizaje asincrónico.|

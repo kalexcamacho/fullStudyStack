@@ -1,7 +1,14 @@
-|Nivel| Descripción|
-|:---------|:--------------|
-|1. Temática del sitio | Esta página web, es una ecommerce orientada a la venta de material para estudio, de diferentes temáticas de interés.|
-|2. Público objetivo | Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.|
+<table>
+    <tr>
+        <td>1. Temática del sitio </td>
+        <td>Esta página web, es una ecommerce orientada a la venta de material para estudio, de diferentes temáticas de interés.</td>
+    </tr>
+    <tr>
+        <td>2. Público objetivo </td>
+        <td>Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.</td>
+    </tr>
+</table>
+
 3. Referentes:
 + https://www.udemy.com/ : Udemy es una plataforma de aprendizaje en línea. Está dirigido a adultos profesionales. Udemy proporciona herramientas para que los usuarios puedan crear un curso, promocionarlo y ganar dinero con gastos de inscripción de los estudiantes.
 <img src="https://logos-marcas.com/wp-content/uploads/2021/11/Udemy-Logo.png" alt="udemy" width="200"/>
@@ -29,17 +36,9 @@ alt="itoo" width="200"/>
 |4.3 Cesar Corregidor Carreño | Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.| 
 |4.5 Miguel Angel Rueda Diaz | Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack|
 
-| | | | 
-|-|-|-|
-|5. Productos y/o servicios ofrecidos | Paquetes de cursos,con material en texto plano, y contenido audiovisual extra, para aprendizaje asincrónico.|
-
 <table>
-<tr>
-    <td>Key 1</td>
-    <td>Value 1</td>
-</tr>
-<tr>
-    <td>Key 2</td>
-    <td>Value 2</td>
-</tr>
+    <tr>
+        <td>5. Productos y/o servicios ofrecidos</td>
+        <td>Paquetes de cursos,con material en texto plano, y contenido audiovisual extra, para aprendizaje asincrónico.</td>
+    </tr>
 </table>

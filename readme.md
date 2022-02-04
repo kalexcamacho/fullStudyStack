@@ -1,3 +1,5 @@
+|Nivel| Descripción|
+|:---------|:--------------|
 |1. Temática del sitio | Esta página web, es una ecommerce orientada a la venta de material para estudio, de diferentes temáticas de interés.|
 |2. Público objetivo | Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.|
 |3. Referentes |- https://www.udemy.com/ : Udemy es una plataforma de aprendizaje en línea. Está dirigido a adultos profesionales. Udemy proporciona herramientas para que los usuarios puedan crear un curso, promocionarlo y ganar dinero con gastos de inscripción de los estudiantes.

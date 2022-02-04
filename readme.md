@@ -7,6 +7,24 @@
         <td>2. Público objetivo </td>
         <td>Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.</td>
     </tr>
+    
+</table>
+
+<table>
+    <tr>
+        <td>3. Referentes </td>
+        <td>
+            <ul>https://www.udemy.com/ : Udemy es una plataforma de aprendizaje en línea. Está dirigido a adultos profesionales. Udemy proporciona herramientas para que los usuarios puedan crear un curso, 
+            promocionarlo y ganar dinero con gastos de inscripción de los estudiantes.
+            <img src="https://logos-marcas.com/wp-content/uploads/2021/11/Udemy-Logo.png" alt="udemy" width="200"/>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>2. Público objetivo </td>
+        <td>Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.</td>
+    </tr>
+    
 </table>
 
 3. Referentes:

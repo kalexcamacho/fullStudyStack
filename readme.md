@@ -31,11 +31,7 @@
                 <img src="https://http2.mlstatic.com/static/org-img/homesnw/mercado-libre.png?v=2" alt="mercadoLibre" width="200"/></li>
             </ul>            
         </td>
-    </tr>
-    <tr>
-        <td>2. Público objetivo </td>
-        <td>Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.</td>
-    </tr>    
+    </tr>  
 </table>
 
 |Estudiante| Descripción|

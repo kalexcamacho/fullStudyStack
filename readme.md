@@ -39,6 +39,7 @@
 |4.1  Kevin Alexander Camacho Bernal | Ingeniero en Energía de la Universidad Autónoma de Bucaramanga, estudiante de Desarrollo Web Full Stack, amante del ultimate freesbe, del deporte y de los videojuegos.|
 |4.2 Jesus Alberto Ramirez Carvajal | Ingeniero en sistemas y telecomunicaciones de la universidad Católica de Pereira.|
 |4.3 Cesar Corregidor Carreño | Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.| 
+|4.4 NOMBRE | DESCRIPCION.| 
 |4.5 Miguel Angel Rueda Diaz | Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack|
 
 <table>

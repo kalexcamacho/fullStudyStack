@@ -13,10 +13,10 @@ app.get('/login', (req,res)=>{
 app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
-app.get('/ProductDetail', (req,res)=>{
+app.get('/productDetail', (req,res)=>{
     res.sendFile(__dirname + '/views/ProductDetail.html');
 });
-app.get('/ProductCart', (req,res)=>{
+app.get('/productCart', (req,res)=>{
     res.sendFile(__dirname + '/views/ProductCart.html');
 });
 

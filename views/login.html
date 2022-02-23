@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body  class="fondo-login-register">
     <header>
         <div class="header">
             <img src="./images/logo-blanco.jpg" alt="" class="logo-header">
@@ -34,14 +34,8 @@
         </div>
     </header>   
     
-    <main class="fondo-login-register">
+    <main>
         <form action="/" method="get">
-            <div class="items-formulario">
-                <label>
-                    Nombre y Apellido:
-                </label>
-                <input type="text" name="nombreYApellido" placeholder="Fulano De Tal" class="item">
-            </div>
             <div class="items-formulario">
                 <label>
                     Email:
@@ -56,14 +50,10 @@
                 <input type="password" name="contraseña" placeholder="Fulano123" class="item">
             </div>
             <div class="items-formulario">
-                <label>
-                    Confirmacion contraseña:
-                </label>
-                <input type="password" name="contraseña" placeholder="Fulano123" class="item">
+                <button type="submit" class="button-enviar-borrar"> Crear cuenta </button>
             </div>
-            <div class="button">
-                <button type="submit" class="button-enviar-borrar"> Enviar </button>
-                <button type="reset" class="button-enviar-borrar"> Borrar </button>
+            <div class="caja-link-login">
+                <span class="link-login">¿Aún no eres miembro? </span><a href="/register" class="link-login">Regístrate</a>
             </div>
         </form>
     </main>

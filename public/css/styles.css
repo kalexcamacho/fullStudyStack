@@ -275,7 +275,7 @@ footer{
     }
 
     .barra-busqueda ::placeholder{
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .input-busqueda{
@@ -286,4 +286,40 @@ footer{
         font-size: 25px;
         float: right;
     }
+}
+
+/*---------------------style productCart-----------------------*/
+
+main section .products-com{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 23%;
+}
+
+.headerinfocompra, .productosinfocompra, .totalinfocompra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between; 
+}
+
+.infocompra{
+
+    background-color: rgb(10, 83, 83);
+    padding: 2%;
+    margin: 1%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 23%;
+    height: 25%;
+}
+
+.productCart-com{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
 }

@@ -180,6 +180,27 @@ form ::placeholder{
     font-family: 'Montserrat', sans-serif;
 }
 
+footer{
+    display: flex;
+}
+
+.grupo-listas-footer{
+    display: flex;
+}
+
+.lista-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos-footer{
+    display: block;
+}
+
+.icono-footer{
+    width: 2em;
+    height: 2em;
+}
 
 @media (min-width: 481px){
     main section article{

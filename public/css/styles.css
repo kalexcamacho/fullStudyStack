@@ -69,7 +69,7 @@ article div.main-article{
 }
 
 /*--------------------------------------ProductDetail-------------------------------------------------------*/
-.main-index2{
+.main_PD{
     width: 90%;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -77,30 +77,30 @@ article div.main-article{
     background-color: #ffffff;
 }
 
-main .course_title{
+.main_PD .course_title{
     width: 100%;
     margin: 0 auto;
     padding: 5%;
     text-align: center;
 }
 
-main .img_background{
+.main_PD .img_background{
     padding: 1%;
 }
 
-main .product_img_pd{
+.main_PD .product_img_pd{
     width: 100%;
     height: 30vw;
     padding: 2%;
 }
 
-main .general_list {
+.main_PD .general_list {
     list-style-type: none;
     padding: 3px;
     color: black;
 }
 
-.buy{
+.main_PD .buy{
     flex: block;
     margin: 0 auto;
     padding: 0.5rem 0;
@@ -111,8 +111,8 @@ main .general_list {
     text-align: center;
 }
 
-main .course_information,
-main .learn{
+.main_PD .course_information,
+.main_PD .learn{
     width: 100%;
     border:  solid 1px #666;
     margin: 0.5rem 1rem;
@@ -121,7 +121,7 @@ main .learn{
     font-size: 1.2rem;
 }
 
-main .course_content{
+.main_PD .course_content{
     border:  solid 1px #666;
     margin: 0.5rem 1rem;
     border-radius: 1%;
@@ -130,7 +130,7 @@ main .course_content{
 
 }
 
-main .comments{
+.main_PD .comments{
     border:  solid 1px #666;
     margin: 0.5rem 1rem;
     border-radius: 1%;
@@ -457,7 +457,7 @@ a{
         border-radius: 50%;
     }
     /*------------------------DetailProduct481---------------------------*/
-    main .containt_2{
+    .main_PD .containt_2{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;
@@ -468,25 +468,26 @@ a{
         border-top: solid 1px #666;
     }
 
-    main .course_information,
-    main .learn{
+    .main_PD .course_information,
+    .main_PD .learn{
         margin: 0 0.2rem;
         border-radius: 1%;
         padding: 0.2rem;
         font-size: 1.2rem;
     }
 
-    main .course_information{
+    .main_PD .course_information{
         align-self: flex-start;
     }    
-    main .course_content,
-    main .comments{
+    .main_PD .course_content,
+    .main_PD .comments{
         border:  solid 1px #666;
         margin: 0 3.2rem;
         border-radius: 1%;
         font-size: 1.2rem;       
     }    
-    main .general_course{
+
+    .main_PD .general_course{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -495,7 +496,8 @@ a{
         width: 100%;
         background-color: #666;
         }
-    main .introduction{
+
+    .main_PD .introduction{
         font-size: 1.2rem;
         color: #ffffff;
     }
@@ -539,23 +541,23 @@ a{
     }
 
     /*--------------------DetailProduct769------------------*/
-    main .course_information,
-    main .learn{
+    .main_PD .course_information,
+    .main_PD .learn{
         margin: 0 0.5rem;
     }
 
-    main .learn{
+    .main_PD .learn{
         flex-grow: 0.7;
     }
 
-    main .course_information{
+    .main_PD .course_information{
         flex-grow: 0.3;
     }
 
-    main .course_information,
-    main .learn,
-    main .course_content,
-    main .comments{
+    .main_PD .course_information,
+    .main_PD .learn,
+    .main_PD .course_content,
+    .main_PD .comments{
         font-size: 1.4rem;
     } 
 

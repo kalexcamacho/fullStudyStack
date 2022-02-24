@@ -252,6 +252,14 @@ footer{
         float: right;
     }
     
+    .products-com {
+        width: 23%;
+        display: flex;
+    } 
+
+    .infocompra{    width: 23%;
+        height: 25%;
+    }
 }
 
 @media (min-width: 769px){
@@ -259,6 +267,15 @@ footer{
     main section div.products article{
         width: 23%;
         display: flex;
+    }
+
+    .products-com {
+        width: 23%;
+        display: flex;
+    } 
+
+    .infocompra{    width: 23%;
+        height: 25%;
     }
 
     main{

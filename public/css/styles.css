@@ -195,6 +195,7 @@ summary::marker {
     left: 0;
     width: 100%;
     background-color: white;
+    z-index: 10;
 }
 
 .logo-header{

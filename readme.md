@@ -39,7 +39,7 @@
 |4.1  Kevin Alexander Camacho Bernal | Ingeniero en Energía de la Universidad Autónoma de Bucaramanga, estudiante de Desarrollo Web Full Stack, amante del ultimate freesbe, del deporte y de los videojuegos.|
 |4.2 Jesus Alberto Ramirez Carvajal | Ingeniero en sistemas y telecomunicaciones de la universidad Católica de Pereira.|
 |4.3 Cesar Corregidor Carreño | Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.| 
-|4.4 NOMBRE | DESCRIPCION.| 
+|4.4 Jeimmy Pulido | Internacionalista y Politóloga, Especialista en Gerencia de Proyectos. Candidata a Master en Business Intelligence.Practico Yoga, me ejercito casi todos los dias y me gusta el chocolate| 
 |4.5 Miguel Angel Rueda Diaz | Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack|
 
 <table>

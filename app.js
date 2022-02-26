@@ -14,10 +14,10 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 app.get('/productDetail', (req,res)=>{
-    res.sendFile(__dirname + '/views/ProductDetail.html');
+    res.sendFile(__dirname + '/views/productDetail.html');
 });
 app.get('/productCart', (req,res)=>{
-    res.sendFile(__dirname + '/views/ProductCart.html');
+    res.sendFile(__dirname + '/views/productCart.html');
 });
 
 app.listen(process.env.PORT || 3000, () => console.log('Server running in 3000 port'));

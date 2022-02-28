@@ -189,16 +189,22 @@ summary::marker {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 0px 5px #666;
+    box-shadow: 0px 0px 4px #000B1F;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: rgba(0, 11, 31, 0.7);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     z-index: 10;
 }
 
 .logo-header{
+    width: 100%;
+}
+
+.a-logo-header{
     width: 15%;
 }
 
@@ -208,16 +214,20 @@ summary::marker {
     justify-content: space-between;
     width: 30%;
     padding: 5px;
-    border: none;
-    background-color: #f38221;
-    border-radius: 5px;
-    color: black;
+    background-color: #000B1F;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 8px 2px #00DFEF;
+    border-radius: 20px;
+}
+
+.barra-busqueda:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 8px 2px #FF0D6D;
 }
 
 .barra-busqueda ::placeholder{
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family:'Poppins', sans-serif;
     font-size: 15px;
 }
 
@@ -228,18 +238,22 @@ summary::marker {
     outline: none;
     color: white;
     font-size: 15px;
-    
+    font-family:'Poppins', sans-serif;  
 }
 
-.logos-header{
+.iconos-header{
     width: 20%;
     display: flex;
     justify-content: space-around;
 }
 
-.logos-header i{
-    color: #f38221;
-    font-size: 1.5em;
+.iconos-header i{
+    color: #00DFEF;
+    font-size: 1em;
+}
+
+.iconos-header i:hover{
+    color: #FF0D6D;
 }
 
 .button-busqueda i{
@@ -259,14 +273,14 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 form ::placeholder{
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     margin: 10px;
 }
@@ -283,40 +297,74 @@ form ::placeholder{
     display: block;
     font-weight: bold;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .item{
     width: 100%;
     padding: 8px;
-    border-radius: 5px;
-    background-color: rgba(244, 130, 33, 0.5);
+    background-color: #000B1F;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 0;
+}
+
+.item:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
 }
 
 .button-enviar-borrar{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     width: 100%;
     color: white;
-    background-color: rgb(2, 142, 153);
+    background-color: #000B1F;
     font-size: 1em;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 0 auto;
     justify-content: space-around;
     padding: 8px;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+}
+
+.button-enviar-borrar:hover{
+    background-color: #FF0D6D;
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
 }
 
 .caja-link-login{
     display: flex;
-    justify-content: space-around;
+    width: 90%;
+    justify-content: space-between;
 }
 
 .link-login{
+    padding: 8px;
     margin-bottom: 5px;
     font-weight: bold;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link-login-2{
+    padding: 8px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link-login-2:hover{
+    color:#FF0D6D
 }
 
 /*-------------------------------estilos footer------------------------------------------------------------*/
@@ -325,9 +373,12 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     margin: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 11, 31, 0.7);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 }
 
 .grupo-listas-footer{
@@ -336,7 +387,7 @@ footer{
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
@@ -352,18 +403,22 @@ footer{
 
 .titulos-footer{
     display: block;
-    font-weight: 5000;
+    font-weight: bold;
     color: white;
+}
+
+.titulos-footer:hover{
+    color: #FF0D6D;
 }
 
 ul{
     color: white;
 }
 
-a{
+.a-footer{
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .caja-logo-e-iconos-footer{
@@ -387,6 +442,11 @@ a{
     width: 2em;
     height: 2em;
     border-radius: 50%;
+}
+
+.icono-footer:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 8px 2px #FF0D6D;
 }
 
 @media (min-width: 481px){
@@ -413,8 +473,8 @@ a{
         margin-top: 80px;
     }
 
-    .logos-header i{
-        font-size: 2em;
+    .iconos-header i{
+        font-size: 1.5em;
     }
 
     .barra-busqueda{
@@ -439,7 +499,6 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: rgba(0, 0, 0, 0.7);
         float: bottom;
         align-self: flex-end;
         padding: 20px;
@@ -451,7 +510,7 @@ a{
         width: 50%;
         justify-content: space-between;
         align-items: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: bold;
     }
     
@@ -503,6 +562,25 @@ a{
         height: 2em;
         border-radius: 50%;
     }
+
+    .caja-link-login{
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    .item{
+        box-shadow: 0px 0px 8px 2px #00DFEF;
+    }
+    
+    .item:hover{
+        border: 1.5px solid #FF0D6D;
+        box-shadow: 0px 0px 8px 2px #FF0D6D;
+    }
+
+    form{
+        border-radius: 10px;
+    }
+
     /*------------------------DetailProduct481---------------------------*/
     .main_PD .containt_2{
         display: flex;
@@ -562,6 +640,7 @@ a{
     }
     /*-------------------*/
 }
+
 @media (min-width: 769px){
 
     main section div.products article{
@@ -577,8 +656,8 @@ a{
         margin-top: 150px;
     }
 
-    .logos-header i{
-        font-size: 3em;
+    .iconos-header i{
+        font-size: 2em;
     }
 
     .barra-busqueda{
@@ -597,6 +676,25 @@ a{
     .button-busqueda i{
         font-size: 25px;
         float: right;
+    }
+
+    .caja-link-login{
+        width: 40%;
+        justify-content: space-around;
+    }
+
+    .item{
+        box-shadow: 0px 0px 8px 2px #00DFEF;
+    }
+    
+    .item:hover{
+        border: 1.5px solid #FF0D6D;
+        box-shadow: 0px 0px 8px 2px #FF0D6D;
+    }
+
+    form{
+        border-radius: 20px;
+        backdrop-filter: blur(4px);
     }
 
     /*--------------------DetailProduct769------------------*/
@@ -626,11 +724,11 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: rgba(0, 0, 0, 0.7);
         float: bottom;
         align-self: flex-end;
         padding: 20px;
         margin: 10px;
+        border-radius: 20px;
     }
     
     .grupo-listas-footer{
@@ -639,8 +737,7 @@ a{
         width: 50%;
         justify-content: space-between;
         align-items: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
     }
     
     .lista-footer{
@@ -649,20 +746,18 @@ a{
         align-items: center;
     }
     
-    .titulos-footer{
-        display: block;
-        font-weight: 5000;
+    .titulos-footer:hover{
         color: white;
     }
-    
-    ul{
-        color: white;
+
+    ul .a-footer:hover{
+        color: #FF0D6D;
     }
     
-    a{
+    .a-footer{
         text-decoration: none;
         color: white;
-        font-weight: 500;
+        font-weight: 0;
     }
     
     .caja-logo-e-iconos-footer{

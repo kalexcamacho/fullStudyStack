@@ -18,7 +18,12 @@
     margin: 0 auto;
     padding-bottom: 20px;
     margin-top: 50px;
-    background-color: rgba(0, 11, 31, 0.7);
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius: 20;
 }
 
 main section .products{
@@ -34,7 +39,7 @@ main h3{
 
 main section article{
     width: 100%;
-    background-color: #000B1F;
+    background-color: rgba(255, 255, 255, 0.2);
     border: 1.5px solid #00DFEF;
     box-shadow: 0px 0px 2px 2px #00DFEF;
     color: white;
@@ -45,6 +50,11 @@ main section article{
     transition: width 2s, height 4s;
     padding: 2%;
     margin: 1%;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
 }
 main section article:hover{
     border: 1.5px solid #FF0D6D;
@@ -55,7 +65,7 @@ body{
     margin-bottom: 0;
     border-bottom: 0;
     padding-bottom: 0;
-    background-color: #000B1F;
+    background-color: #000713;
 }
 
 .product_img{
@@ -652,6 +662,9 @@ ul{
         width: 23%;
         display: flex;
     }
+    h3{        
+    font-size: xx-large;
+    }
 
     .main-index{
         margin-top: 150px;
@@ -810,7 +823,7 @@ main section .products-com{
     background-color: rgb(10, 83, 83);
     padding: 2%;
     margin: 1%;
-
+    color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

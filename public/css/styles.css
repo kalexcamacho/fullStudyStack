@@ -662,6 +662,7 @@ ul{
     main section div.products article{
         width: 23%;
         display: flex;
+        margin: 1%;
     }
     h3{        
     font-size: xx-large;

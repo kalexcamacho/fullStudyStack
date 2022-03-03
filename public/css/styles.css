@@ -219,16 +219,19 @@ article div.main-article{
       content: "";
 }
 
-.main_PD .list_a{
-    color: rgb(255, 255, 240, 1);
-}
+
 
 .main_PD .sublist_li{
     display: block;
     width: 100%;
     list-style-type: none;
-    background-color: white;
     margin-left: 1rem;
+    margin-top: 5px;
+    background-color:  rgb(255, 255, 240, 0.7);
+    border: solid 1px #00347A;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
 }
 
 .main_PD .sublist_a{

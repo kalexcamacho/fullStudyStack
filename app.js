@@ -1,23 +1,15 @@
 const express = require("express");
 const path = require('path');
 const app = express();
-const publicPath = path.resolve(__dirname,'./public');
-app.use(express.static(publicPath));
+const mainRouter = require('./src/routes/mainRouter')
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'));
-});
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
-});
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
-});
-app.get('/productDetail', (req,res)=>{
-    res.sendFile(__dirname + '/views/productDetail.html');
-});
-app.get('/productCart', (req,res)=>{
-    res.sendFile(__dirname + '/views/productCart.html');
-});
+// Configuración
+app.use(express.static(__dirname + '/public'));
+app.set("view engine", "ejs")
+app.set('views', path.join(__dirname, './src/views'));
+
+// Rutas
+app.use('/', mainRouter);
+
 
 app.listen(process.env.PORT || 3000, () => console.log('Server running in 3000 port'));

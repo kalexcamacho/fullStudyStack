@@ -36,8 +36,20 @@
 }
 
 .main-index .self-container-2{
+    padding: 8px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration: underline;
     color: white;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
 }
+
+.self-container-2:hover a{
+    color:#FF0D6D;
+    border-radius: 5px;
+}
+
 
 main section .products{
     display: flex;
@@ -140,6 +152,21 @@ article div.main-article{
 .main_PD .introduction_text{
     list-style-type: none;
 }
+
+.main_PD .creator_modify a{
+    padding: 8px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+    
+.main_PD .creator_modify:hover a{
+        color:#FF0D6D;
+        border-radius: 5px;
+    }
 
 .main_PD .introduction_text li{
     margin: 1rem;
@@ -493,7 +520,16 @@ form ::placeholder{
 .main-newProduct .productImage{
     width: 100%;
     position: relative;
+    border: 1.5px solid #00DFEF;
+    border-radius: 20px;
 }
+
+.main-newProduct .productImage:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+    border-radius: 20px;
+}
+
 .main-newProduct .productImage::before{
     background-color: #000B1F;
     color: white;
@@ -512,6 +548,11 @@ form ::placeholder{
     bottom: 0;
 }
 
+.main-newProduct .productImage:hover::before{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+}
+
 .main-newProduct .productImage input[type="file"] {
     opacity: 0;
     height: 37px;
@@ -521,12 +562,13 @@ form ::placeholder{
 .main-newProduct .item-categorias{
     width: 100%;
 }
+
 .main-newProduct .item-categorias2{
     width: 100%;
     background-color: #000B1F;
     color: white;
     font-family: 'Poppins', sans-serif;
-    padding: 8px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -538,7 +580,12 @@ form ::placeholder{
     top: 0;
     bottom: 0;
 }
- 
+
+.main-newProduct .item-categorias2:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+}
+
 .main-newProduct .item{
     width: 100%;
     padding: 8px;

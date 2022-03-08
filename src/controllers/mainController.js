@@ -6,7 +6,9 @@ const controller = {
     login: (req, res) => res.render('./users/login'),
     register: (req, res) => res.render('./users/register'),
     productDetail: (req, res) => res.render('./products/productDetail'),
-    productCart: (req, res) => res.render('./products/productCart')
+    productCart: (req, res) => res.render('./products/productCart'),
+    newProduct: (req, res) => res.render('./products/newProduct'),
+    createProduct: (req, res) => res.render('./products/createProduct')
 }
 
 module.exports = controller;

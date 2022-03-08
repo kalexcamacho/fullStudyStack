@@ -27,6 +27,18 @@
     -webkit-border-radius: 20;
 }
 
+.main-index .container-up{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+.main-index .self-container-2{
+    color: white;
+}
+
 main section .products{
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +95,6 @@ article div.main-article{
     position: relative;
     padding: 15px;
 }
-
 /*--------------------------------------ProductDetail-------------------------------------------------------*/
 
 .main_PD h1{
@@ -116,6 +127,14 @@ article div.main-article{
     color: white;
     border-bottom: 1px solid #00DFEF;
     border-top: 1px solid #00DFEF;
+}
+
+.main_PD .creator_modify{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 2%;
 }
 
 .main_PD .introduction_text{
@@ -428,6 +447,136 @@ form ::placeholder{
     color:#FF0D6D
 }
 
+/*----------------------------------newProduct and modifyProduct-------------------------------------------*/
+.main-newProduct{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+.main-newProduct form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.main-newProduct ::placeholder{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.main-newProduct .items-categorias{
+    margin: 15px;
+    width: 70%;
+    justify-content: center;
+}
+
+.main-newProduct .items-new-product{
+    margin: 15px;
+    width: 70%;
+    justify-content: center;
+}
+
+.main-newProduct .items-new-product label{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-newProduct .productImage{
+    width: 100%;
+    position: relative;
+}
+.main-newProduct .productImage::before{
+    background-color: #000B1F;
+    color: white;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    border-radius: 20px;;
+    content: 'Seleccionar Imagen'; /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.main-newProduct .productImage input[type="file"] {
+    opacity: 0;
+    height: 37px;
+    width: 100%;
+  }
+
+.main-newProduct .item-categorias{
+    width: 100%;
+}
+.main-newProduct .item-categorias2{
+    width: 100%;
+    background-color: #000B1F;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+ 
+.main-newProduct .item{
+    width: 100%;
+    padding: 8px;
+    background-color: #000B1F;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 0;
+}
+
+.main-newProduct .item:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+}
+
+.main-newProduct .button-crear-curso{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    background-color: #000B1F;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 8px;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+}
+
+.main-newProduct .button-crear-curso:hover{
+    background-color: #FF0D6D;
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+}
 /*-------------------------------estilos footer------------------------------------------------------------*/
 footer{
     display: flex;
@@ -700,7 +849,14 @@ ul{
         border-radius: 1%;
         font-size: 1.2rem;       
     }    
-    /*-------------------*/
+    /*----------------------------------newProduct-------------------------------------------*/
+    .main-newProduct{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 100px;
+        padding-top: 10px;
+    }
+
 }
 
 @media (min-width: 769px){

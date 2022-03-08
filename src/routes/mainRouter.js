@@ -14,6 +14,6 @@ router.get('/productCart', mainController.productCart);
 
 router.get('/newProduct', mainController.newProduct);
 
-router.get('/createProduct', mainController.createProduct);
+router.get('/modifyProduct', mainController.modifyProduct);
 
 module.exports = router;

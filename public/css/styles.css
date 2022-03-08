@@ -219,7 +219,9 @@ article div.main-article{
       content: "";
 }
 
-
+.main_PD .list_a{
+    color: rgb(255, 255, 240, 1);
+}
 
 .main_PD .sublist_li{
     display: block;

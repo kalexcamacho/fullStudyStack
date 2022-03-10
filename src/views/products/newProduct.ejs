@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body class="body-newProduct">
+    <%- include('../partials/header') %>
+    <main class="main-newProduct">
+        <form action="/" method="get">
+            <div class="items-new-product">
+                <label class="productName">
+                    Nombre del producto
+                </label>
+                <input type="text" name="productName" placeholder="Curso Genial .  .  ." class="item">
+            </div>
+            <div class="items-new-product">
+                <label>
+                    Descripción
+                </label>
+                <input type="text" name="productDescription" placeholder="En este curso aprenderás .  .  ." class="item">
+                <p class="mensaje-alerta"></p>
+            </div>
+            <div class="items-new-product">
+                <label>
+                    Imagen
+                </label>
+                <div class="productImage">
+                    <input type="file" name="productImage" class="item-productImage">
+                </div>
+                
+            </div>
+            <div class="items-new-product">
+                <label>
+                    Categoría
+                </label>
+                <div class="item-categorias">
+                    <select name="productCategory" class="item-categorias2">
+                        <option value="desarrolloWeb" class="categoria-particular">Desarrollo web</option>
+                        <option value="desarrolloMovil" class="categoria-particular">Desarrollo Móvil</option>
+                        <option value="ciberseguridad" class="categoria-particular">Ciberseguridad</option>
+                        <option value="cienciaDeDatos" class="categoria-particular">Ciencia de datos</option>
+                        <option value="inteligenciaArtificial" class="categoria-particular">Inteligencia Artificial</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="items-new-product"> 
+                <label>
+                    Código de colores
+                </label>
+                <input type="text" name="productColor" placeholder="Elige el color .  .  ." class="item">
+            </div>
+            <div class="items-new-product">
+                <label>
+                    Precio
+                </label>
+                <input type="text" name="productPrecio" placeholder="COP .  .  ." class="item">
+            </div>
+            <div class="items-new-product">
+                <button type="submit" class="button-crear-curso"> Crear curso </button>
+            </div>            
+        </form>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html>

@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>FullStudyStack</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+    <%- include('../partials/head') %>
     <body>
 
-        <header>
-            <div class="header">
-                <img src="./images/logo-blanco.jpg" alt="" class="logo-header">
-                
-                <div class="barra-busqueda">
-                    <input type="text" name="buscar" placeholder="Buscar" class="input-busqueda"><a href="#" class="button-busqueda"><i
-                            class="fas fa-search"></i></a>
-                </div>
-    
-                <div class="logos-header">
-                    <a href="/"><i class="fas fa-home"></i></a>
-                    <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
-                    <a href="/login"><i class="fas fa-user"></i></a>
-                </div>
-            </div>
-        </header>
+        <%- include('../partials/header') %>
         
         <main class="main-index">
             <section class="last-visit">
-                <h3>Basado en tu última visita</h3><br>
+                <div class="container-up">
+                    <div class="self-container-1">
+                        <h3>Basado en tu última visita</h3><br>
+                    </div>
+                    <div class="self-container-2">
+                        <a href="/newProduct">Crea tu curso</a> 
+                    </div>
+                </div>                
                 <div class="products">
                     
                     <article>
+                        <a href="/ProductDetail">
                         <img src="images/js.jpg" alt="Cafetera" class="product_img">
                         <div class="main-article">
                             <h4 class="title">Java Script</h4>
                             <p class="price">$230.000</p>
-                        </div>                        
+                        </div>      
+                        </a>                  
                     </article><br>
 
                     <article>
@@ -150,10 +130,7 @@
             </section>
         </main>
         
-        <div class="contenedor-footer"></div>
-        <footer>
-            
-        </footer>
-    </div> 
+        <%- include('../partials/footer') %>
+
     </body>
 </html>

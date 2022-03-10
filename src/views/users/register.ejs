@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+    <body  class="fondo-login-register">
+
+        <%- include('../partials/header') %> 
+        
+        <main class="main-login">
+            <form action="/" method="get">
+                <div class="items-formulario">
+                    <label>
+                        Nombre y Apellido:
+                    </label>
+                    <input type="text" name="nombreYApellido" placeholder="Fulano De Tal" class="item">
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email" name="email" placeholder="example@email.com" class="item">
+                    <p class="mensaje-alerta"></p>
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Contraseña:
+                    </label>
+                    <input type="password" name="contraseña" placeholder="Fulano123" class="item">
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Confirmacion contraseña:
+                    </label>
+                    <input type="password" name="contraseña" placeholder="Fulano123" class="item">
+                </div>
+                <div class="items-formulario">
+                    <button type="submit" class="button-enviar-borrar"> Crear cuenta </button>
+                </div>            
+                <div class="caja-link-login">
+                    <span class="link-login">¿Ya tienes cuenta? </span><a href="/login" class="link-login-2">Iniciar sesión</a>
+                </div>
+            </form>
+        </main>
+        
+        <%- include('../partials/footer') %>
+        
+    </body>
+</html>

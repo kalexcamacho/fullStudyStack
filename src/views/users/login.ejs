@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body  class="fondo-login-register">
+
+    <%- include('../partials/header') %>  
+    
+    <main class="main-login">
+        <form action="/" method="get">
+            <div class="items-formulario">
+                <label>
+                    Email:
+                </label>
+                <input type="email" name="email" placeholder="example@email.com" class="item">
+                <p class="mensaje-alerta"></p>
+            </div>
+            <div class="items-formulario">
+                <label>
+                    Contraseña:
+                </label>
+                <input type="password" name="contraseña" placeholder="Fulano123" class="item">
+            </div>
+            <div class="items-formulario">
+                <button type="submit" class="button-enviar-borrar"> Ingresar </button>
+            </div>
+            <div class="caja-link-login">
+                <span class="link-login">¿Aún no eres miembro? </span><a href="/register" class="link-login-2">Regístrate</a>
+            </div>
+        </form>
+    </main>
+    
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>

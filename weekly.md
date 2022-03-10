@@ -67,7 +67,7 @@
 <table>
     <tr><b>SPRINT 3</br></tr>
     <br>
-    <tr><b>IDENTIFICACIÓN (Aspectos ejecución tareas)</br></tr>
+    <tr><b>IDENTIFICACIÓN (Aspectos ejecución tareas)</b></tr>
     <tr>
         <td><b>ENTREGABLE</b></td>
         <td><b>Tareas Completadas</b></td>

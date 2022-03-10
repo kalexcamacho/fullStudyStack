@@ -1,10 +1,7 @@
 <table>
-    <tr>
-        <b>SPRINT 1</b>
-    </tr>
-    <tr>
-        <b>IDENTIFICACIÓN (Aspectos ejecución tareas)</b>
-    </tr>
+    <tr><b>SPRINT 1</b></tr>
+    <br>
+    <tr><b>IDENTIFICACIÓN (Aspectos ejecución tareas)</b></tr>
     <tr>
         <td><b>Entregable</b></td>
         <td><b>Tareas Completadas</b></td>
@@ -39,6 +36,7 @@
 
 <table>
     <tr><b>SPRINT 2</b></tr>
+    <br>
     <tr><b>IDENTIFICACIÓN (Aspectos ejecución tareas)</b></tr>
     <tr>
         <td><b>ENTREGABLE</b></td>
@@ -49,7 +47,7 @@
     <tr>
         <td><b>Archivo retro.md<b></td>
         <td>No completado</td>
-        <td>No aplica<td>
+        <td>No aplica</td>
         <td>Se realizó la construcción para la entrega del Sprint 3</td>
     </tr>
     <tr>
@@ -68,12 +66,13 @@
 
 <table>
     <tr><b>SPRINT 3</br></tr>
+    <br>
     <tr><b>IDENTIFICACIÓN (Aspectos ejecución tareas)</br></tr>
     <tr>
         <td><b>ENTREGABLE</b></td>
-        <td><b>Tareas Completadas</b><td>
-        <td><b>Impedimentos Encontrados</b><td>
-        <td><b>Soluciones Propuestas</b><td>        
+        <td><b>Tareas Completadas</b></td>
+        <td><b>Impedimentos Encontrados</b></td>
+        <td><b>Soluciones Propuestas</b><t/d>        
     <tr>
     <tr>
         <td><b>Archivo retro.md</b></td>

@@ -7,12 +7,16 @@
         <td>2. Público objetivo </td>
         <td>Ésta plataforma esta enfocada en personas que quieran estudiar acerca de un tema y que probablemente no tienen mucho tiempo libre para estudiar presencialmente, o, en personas que no tienen un facil acceso a temáticas de educación específica, ya sea por su ubicación geográfica, o porque quieren algo muy en específico.</td>
     </tr>
+    <tr>
+        <td>3. Tablero Trello</td>
+        <td>https://trello.com/b/PYRa8aCE/proyecto-integrador</td>
+    </tr>
     
 </table>
 
 <table>
     <tr>
-        <td>3. Referentes </td>
+        <td>4. Referentes </td>
         <td>
             <ul>
                 <li>https://www.udemy.com/ : Udemy es una plataforma de aprendizaje en línea. Está dirigido a adultos profesionales. Udemy proporciona herramientas para que los usuarios puedan crear un curso, 
@@ -36,11 +40,11 @@
 
 |Estudiante| Descripción|
 |:-------------|:-------------|
-|4.1  Kevin Alexander Camacho Bernal | Ingeniero en Energía de la Universidad Autónoma de Bucaramanga, estudiante de Desarrollo Web Full Stack, amante del ultimate freesbe, del deporte y de los videojuegos.|
-|4.2 Jesus Alberto Ramirez Carvajal | Ingeniero en sistemas y telecomunicaciones de la universidad Católica de Pereira.|
-|4.3 Cesar Corregidor Carreño | Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.| 
-|4.4 Jeimmy Pulido | Internacionalista y Politóloga, Especialista en Gerencia de Proyectos. Candidata a Master en Business Intelligence.Practico Yoga, me ejercito casi todos los dias y me gusta el chocolate| 
-|4.5 Miguel Angel Rueda Diaz | Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack|
+|5.1  Kevin Alexander Camacho Bernal | Ingeniero en Energía de la Universidad Autónoma de Bucaramanga, estudiante de Desarrollo Web Full Stack, amante del ultimate freesbe, del deporte y de los videojuegos.|
+|5.2 Jesus Alberto Ramirez Carvajal | Ingeniero en sistemas y telecomunicaciones de la universidad Católica de Pereira.|
+|5.3 Cesar Corregidor Carreño | Ingeniero electrónico, estudiante de Desarrollo Web Full Stack y especialización en estadística aplicada, me gusta jugar fútbol y salir a caminar.| 
+|5.4 Jeimmy Pulido | Internacionalista y Politóloga, Especialista en Gerencia de Proyectos. Candidata a Master en Business Intelligence.Practico Yoga, me ejercito casi todos los dias y me gusta el chocolate| 
+|5.5 Miguel Angel Rueda Diaz | Bioingeniero de la Universidad El Bosque, estudiante de Desarrollo Web Full Stack|
 
 <table>
     <tr>

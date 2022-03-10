@@ -178,8 +178,9 @@ article div.main-article{
 }
 
 .main_PD .mas_vendido{
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.8);
     padding: 0.2rem;
+    font-weight: 1000;
     color: #FF0D6D;
 }
 
@@ -219,13 +220,33 @@ article div.main-article{
     color: white;
 }
 
-.main_PD .price_button{
+/*.main_PD .price_button{
     display: block;
     width: 100%;
-    background-color: #396cda;
+    
     color: white;
     padding: 0.1rem 0;
     border-radius: 0.5rem;    
+}*/
+
+.main_PD .price_button{
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: bolder;
+    /*background-color: #000B1F;*/
+    background-color: #396cda;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 0.1rem 0;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+}
+
+.main_PD .price_button:hover{
+    background-color: #FF0D6D;
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
 }
 
 .main_PD .cart_shopping_add{

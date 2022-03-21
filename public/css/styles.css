@@ -341,7 +341,7 @@ article div.main-article{
     align-items: center;
     justify-content: space-between;
     width: 30%;
-    padding: 5px;
+    padding: 0;
     background-color: #000B1F;
     border: 1.5px solid #00DFEF;
     box-shadow: 0px 0px 8px 2px #00DFEF;
@@ -367,6 +367,18 @@ article div.main-article{
     color: white;
     font-size: 15px;
     font-family:'Poppins', sans-serif;  
+}
+
+.form-input-busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    border:none;
+    background: none;
+    outline: none;
+    color: white;  
 }
 
 .iconos-header{
@@ -759,7 +771,7 @@ ul{
 
     .barra-busqueda{
         width: 50%;
-        padding: 10px;
+        padding: 2px;
         margin:2%
     }
 
@@ -953,7 +965,7 @@ ul{
 
     .barra-busqueda{
         width: 50%;
-        padding: 10px;
+        padding: 5px;
     }
 
     .barra-busqueda ::placeholder{

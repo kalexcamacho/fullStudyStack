@@ -20,14 +20,14 @@ const usersController = require('../controllers/usersController') /* modificar y
 
 //---------------------------------------------- usersRouter -----------------------------------------------------------------------
 
-router.get('/', mainController.index);
+router.get('/', usersController.index);
 
-router.get('/login', mainController.login);
+router.get('/login', usersController.login);
 
-router.get('/register', mainController.register);
-router.post('/register', usersUpload.single(/* agregar input de imagen al formulario de register y poner aqui el nombre */), mainController.storeProfile);
+router.get('/register', usersController.register);
+router.post('/register', usersUpload.single(/* agregar input de imagen al formulario de register y poner aqui el nombre */), usersController.storeProfile);
 
-router.get('/search', mainController.search);
+router.get('/search', usersController.search);
 
 
 

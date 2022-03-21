@@ -4,6 +4,7 @@
         "name": "Java Script",
         "price": 200.000,
         "description": "lorem ipsum",
+        "category": "visited",
         "image": "js.jpg"
     },
     {
@@ -11,20 +12,87 @@
         "name": "PHP",
         "price": 250.000,
         "description": "lorem ipsum",
-        "image": "js.jpg"
+        "category": "visited",
+        "image": "php.png"
     },
     {
         "id": 3,
         "name": "HTML",
         "price": 115.000,
         "description": "lorem ipsum",
-        "image": "js.jpg"
+        "category": "visited",
+        "image": "html.png"
     },
     {
         "id": 4,
         "name": "CSS",
         "price": 115.000,
         "description": "lorem ipsum",
+        "category": "visited",
+        "image": "css.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Java Script",
+        "price": 200.000,
+        "description": "lorem ipsum",
+        "category": "newProduct",
         "image": "js.jpg"
+    },
+    {
+        "id": 6,
+        "name": "PHP",
+        "price": 250.000,
+        "description": "lorem ipsum",
+        "category": "newProduct",
+        "image": "php.png"
+    },
+    {
+        "id": 7,
+        "name": "HTML",
+        "price": 115.000,
+        "description": "lorem ipsum",
+        "category": "newProduct",
+        "image": "html.png"
+    },
+    {
+        "id": 8,
+        "name": "CSS",
+        "price": 115.000,
+        "description": "lorem ipsum",
+        "category": "newProduct",
+        "image": "css.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Java Script",
+        "price": 200.000,
+        "description": "lorem ipsum",
+        "category": "highRate",
+        "image": "js.jpg"
+    },
+    {
+        "id": 10,
+        "name": "PHP",
+        "price": 250.000,
+        "description": "lorem ipsum",
+        "category": "highRate",
+        "image": "php.png"
+    },
+    {
+        "id": 11,
+        "name": "HTML",
+        "price": 115.000,
+        "description": "lorem ipsum",
+        "category": "highRate",
+        "image": "html.png"
+    },
+    {
+        "id": 12,
+        "name": "CSS",
+        "price": 115.000,
+        "description": "lorem ipsum",
+        "category": "highRate",
+        "image": "css.jpg"
     }
 ]

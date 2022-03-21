@@ -1,12 +1,28 @@
 const fs = require('fs');
 const path = require('path');
 
-const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
+const productsFilePath = path.join(__dirname, '../data/dataBaseProducts.json');
 
 
 const usersController = {
     //-------------------------------------------------- usersController--------------------------------
-    index: (req, res) => res.render('./users/index')/*Modificar el index para que trabaje tomando como datos el archivo .json*/,
+    index: (req, res) =>{ 
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        let visited=[]; 
+		let newProduct=[];
+        let highRate = [];
+	    products.forEach((specificProduct)=>{
+			if (specificProduct.category == "visited"){
+				visited.push(specificProduct);
+			}else if(specificProduct.category == "newProduct"){
+                newProduct.push(specificProduct)
+            }else{
+				highRate.push(specificProduct);
+			}
+		})
+                
+        res.render('./users/index', {visited, newProduct, highRate})
+    },
 
     login: (req, res) => res.render('./users/login'),
 

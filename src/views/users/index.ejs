@@ -1,136 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <%- include('../partials/head') %>
+<%- include('../partials/head') %>
+
     <body>
 
         <%- include('../partials/header') %>
-        
-        <main class="main-index">
-            <section class="last-visit">
-                <div class="container-up">
-                    <div class="self-container-1">
-                        <h3>Basado en tu última visita</h3><br>
+
+            <main class="main-index">
+                <section class="last-visit">
+                    <div class="container-up">
+                        <div class="self-container-1">
+                            <h3>Basado en tu última visita</h3><br>
+                        </div>
+                        <div class="self-container-2">
+                            <a href="/newProduct">Crea tu curso</a>
+                        </div>
                     </div>
-                    <div class="self-container-2">
-                        <a href="/newProduct">Crea tu curso</a> 
+
+                    <div class="products">
+                        <% visited.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/productDetail/<%= specificProduct.id %>">
+                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
+                                    <div class="main-article">
+                                        <h4 class="title">
+                                            <%= specificProduct.name %>
+                                        </h4>
+                                        <p class="price">$<%= specificProduct.price %>
+                                        </p>
+                                        <p class="">
+                                            <%= specificProduct.description %>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
                     </div>
-                </div>                
-                <div class="products">
-                    
-                    <article>
-                        <a href="/ProductDetail">
-                        <img src="images/js.jpg" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">Java Script</h4>
-                            <p class="price">$230.000</p>
-                        </div>      
-                        </a>                  
-                    </article><br>
 
-                    <article>
-                        <img src="images/php.png" alt="php" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">PHP</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article><br>
+                </section>
 
-                    <article>
-                        <img src="images/html.png" alt="HTML" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">HTML</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article> <br>
+                <section class="last-visit">
+                    <h3>Lo más nuevo</h3><br>
+                    <div class="products">
+                        <% newProduct.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/<%= specificProduct.id %>/productDetail">
+                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
+                                    <div class="main-article">
+                                        <h4 class="title">
+                                            <%= specificProduct.name %>
+                                        </h4>
+                                        <p class="price">$<%= specificProduct.price %>
+                                        </p>
+                                        <p class="">
+                                            <%= specificProduct.description %>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+                </section>
 
-                    <article>
-                        <img src="images/css.jpg" alt="CSS" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">CSS</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article>
-                </div>
-            </section>
+                <section class="last-visit">
+                    <h3>Lo más calificado</h3><br>
+                    <div class="products">
+                        <% highRate.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/productDetail/<%= specificProduct.id %>"></a>
+                                <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
+                                <div class="main-article">
+                                    <h4 class="title">
+                                        <%= specificProduct.name %>
+                                    </h4>
+                                    <p class="price">$<%= specificProduct.price %>
+                                    </p>
+                                    <p class="">
+                                        <%= specificProduct.description %>
+                                    </p>
+                                </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+                </section>
+            </main>
 
-            <section class="last-visit">
-                <h3>Lo más nuevo</h3><br>
-                <div class="products">
-                    
-                    <article >
-                        <img src="images/js.jpg" alt="Cafetera" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">Java Script</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article><br>
-
-                    <article>
-                        <img src="images/php.png" alt="php" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">PHP</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article><br>
-
-                    <article>
-                        <img src="images/html.png" alt="HTML" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">HTML</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article> <br>
-
-                    <article>
-                        <img src="images/css.jpg" alt="CSS" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">CSS</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article>
-                </div>
-            </section>
-
-            <section class="last-visit">
-                <h3>Lo más calificado</h3><br>
-                <div class="products">
-                    
-                    <article>
-                        <img src="images/js.jpg" alt="Cafetera" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">Java Script</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article><br>
-
-                    <article>
-                        <img src="images/php.png" alt="php" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">PHP</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article><br>
-
-                    <article>
-                        <img src="images/html.png" alt="HTML" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">HTML</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article> <br>
-
-                    <article>
-                        <img src="images/css.jpg" alt="CSS" class="product_img">
-                        <div class="main-article">
-                            <h4 class="title">CSS</h4>
-                            <p class="price">$230.000</p>
-                        </div>                        
-                    </article>
-                </div>
-            </section>
-        </main>
-        
-        <%- include('../partials/footer') %>
+            <%- include('../partials/footer') %>
 
     </body>
+
 </html>

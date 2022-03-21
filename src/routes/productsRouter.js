@@ -19,17 +19,18 @@ let productsUpload = multer({productsStorage: productsStorage});
 const productsController = require('../controllers/productsController') 
 
 //---------------------------------------------- productsRouter -----------------------------------------------------------------------
+router.get('/products', productsController.index);
 
-router.get('/productDetail', mainController.productDetail);
+router.get('/productDetail/:id', productsController.productDetail);
 
-router.get('/productCart', mainController.productCart);
+router.get('/productCart', productsController.productCart);
 
-router.get('/newProduct', mainController.newProduct);
-router.post('/newProduct', productsUpload.single('productImage'), mainController.storeNewProduct);
+router.get('/newProduct', productsController.newProduct);
+router.post('/newProduct', productsUpload.single('productImage'), productsController.storeNewProduct);
 
-router.get('/modifyProduct', mainController.modifyProduct);
-router.put('/modifyProduct', productsUpload.single('productImage'), mainController.updateModifiedProduct);
+router.get('/modifyProduct', productsController.modifyProduct);
+router.put('/modifyProduct', productsUpload.single('productImage'), productsController.updateModifiedProduct);
 
-router.delete('/deleteProduct', mainController.updateModifiedProduct);
+router.delete('/deleteProduct', productsController.updateModifiedProduct);
 
 module.exports = router;

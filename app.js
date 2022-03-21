@@ -2,7 +2,8 @@ const express = require("express");
 const path = require('path');
 const app = express();
 const methodOverride =  require('method-override');
-const mainRouter = require('./src/routes/mainRouter');
+const productsRouter = require('./src/routes/productsRouter');
+const usersRouter = require('./src/routes/usersRouter');
 
 // Configuración meddlewares---------------------------------------------------------------------------------------
 app.use(express.static(__dirname + '/public'));
@@ -15,7 +16,8 @@ app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, './src/views'));
 
 // Rutas
-app.use('/', mainRouter); /* modificar y organizar con los 2 archivos de rutas */
+app.use('/', usersRouter);
+app.use('/', productsRouter); 
 
 
 app.listen(process.env.PORT || 3000, () => console.log('Server running in 3000 port'));

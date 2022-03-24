@@ -4,7 +4,7 @@
 <body class="body-newProduct">
     <%- include('../partials/header') %>
     <main class="main-newProduct">
-        <form action="/newProduct" method="POST" enctype="multipart/form-data" multiple>
+        <form action="/newProduct" method="POST" enctype="multipart/form-data">
             <div class="items-new-product">
                 <label class="productName">
                     Nombre del producto
@@ -42,17 +42,11 @@
                     
                 </div>
             </div>
-            <div class="items-new-product"> 
-                <label>
-                    Código de colores
-                </label>
-                <input type="text" name="productColor" placeholder="Elige el color .  .  ." class="item">
-            </div>
             <div class="items-new-product">
                 <label>
                     Precio
                 </label>
-                <input type="text" name="productPrecio" placeholder="COP .  .  ." class="item">
+                <input type="text" name="productPrice" placeholder="COP .  .  ." class="item">
             </div>
             <div class="items-new-product">
                 <button type="submit" class="button-crear-curso"> Crear curso </button>

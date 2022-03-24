@@ -4,6 +4,26 @@
 <body>
     <%- include('../partials/header') %>
 
+    <div class="products">
+        <% products.forEach((specificProduct)=>{ %>
+            <article>
+                <a href="/productDetail/<%= specificProduct.productId %>">
+                    <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
+                    <div class="main-article">
+                        <h4 class="title">
+                            <%= specificProduct.productName %>
+                        </h4>
+                        <p class="price">$<%= specificProduct.productPrice %>
+                        </p>
+                        <p class="">
+                            <%= specificProduct.productDescription %>
+                        </p>
+                    </div>
+                </a>
+            </article><br>
+            <% }) %>
+    </div>
+
     <%- include('../partials/footer') %>
     
 </body>

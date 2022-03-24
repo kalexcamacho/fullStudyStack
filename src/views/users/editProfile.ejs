@@ -6,25 +6,25 @@
         <%- include('../partials/header') %> 
         
         <main class="main-login">
-            <form action="/register" method="POST" enctype="multipart/form-data" multiple>
+            <form action= "/editProfile/<%= profileToEdit.userId %>?_method=PUT" method="POST" enctype="multipart/form-data" multiple>
                 <div class="items-formulario">
                     <label>
                         Nombre y Apellido:
                     </label>
-                    <input type="text" name="userName" placeholder="Fulano De Tal" class="item">
+                    <input type="text" name="userName" value="<%= profileToEdit.userName %>" class="item">
                 </div>
                 <div class="items-formulario">
                     <label>
                         Email:
                     </label>
-                    <input type="email" name="userEmail" placeholder="example@email.com" class="item">
+                    <input type="email" name="userEmail" value="<%= profileToEdit.userEmail %>" class="item">
                     <p class="mensaje-alerta"></p>
                 </div>
                 <div class="items-formulario">
                     <label>
                         Contraseña:
                     </label>
-                    <input type="password" name="userPassword" placeholder="Fulano123" class="item">
+                    <input type="userPassword" name="userPassword" class="item">
                 </div>
                 <div class="items-new-product">
                     <label>
@@ -32,15 +32,12 @@
                     </label>
                     <div class="productImage">
                         <input type="file" name="profileImage" class="item-productImage" multiple required>
-                </div>
+                    </div>
                     
                 </div>
                 <div class="items-formulario">
-                    <button type="submit" class="button-enviar-borrar"> Crear cuenta </button>
+                    <button type="submit" class="button-enviar-borrar"> editar </button>
                 </div>            
-                <div class="caja-link-login">
-                    <span class="link-login">¿Ya tienes cuenta? </span><a href="/login" class="link-login-2">Iniciar sesión</a>
-                </div>
             </form>
         </main>
         

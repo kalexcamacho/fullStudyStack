@@ -1,9 +1,9 @@
 [
-    {
-        "id": 1,
-        "name": "Kevin Camacho",
-        "email": "camachokevin34@gmail.com",
-        "password": "kevin123",
-        "image": "profile_blank.png"
-    }
+  {
+    "userId": 1,
+    "userName": "Pepito Perez",
+    "userEmail": "pepito@perez.com",
+    "userPassword": "pepito23",
+    "userImage": "profile_blank.png"
+  }
 ]

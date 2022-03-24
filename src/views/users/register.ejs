@@ -9,7 +9,7 @@
             <form action="/register" method="POST" enctype="multipart/form-data" multiple>
                 <div class="items-formulario">
                     <label>
-                        Nombre y Apellido:
+                        Nombre:
                     </label>
                     <input type="text" name="userName" placeholder="Fulano De Tal" class="item">
                 </div>
@@ -33,6 +33,27 @@
                     <div class="productImage">
                         <input type="file" name="profileImage" class="item-productImage" multiple required>
                 </div>
+                    
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Categoría
+                    </label>
+                    <div class="item-categorias">
+                        <select name="Category" class="item-categorias2">
+                            <option value="student" class="categoria-particular">Estudiante</option>
+                            <option value="teacher" class="categoria-particular">Profesor</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Imagen
+                    </label>
+                    <div class="userImage">
+                        <input type="file" name="usertImage" class="item-productImage">
+                    </div>
                     
                 </div>
                 <div class="items-formulario">

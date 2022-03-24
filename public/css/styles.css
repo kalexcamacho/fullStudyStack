@@ -363,7 +363,7 @@ article div.main-article{
     align-items: center;
     justify-content: space-between;
     width: 30%;
-    padding: 5px;
+    padding: 0;
     background-color: #000B1F;
     border: 1.5px solid #00DFEF;
     box-shadow: 0px 0px 8px 2px #00DFEF;
@@ -389,6 +389,18 @@ article div.main-article{
     color: white;
     font-size: 15px;
     font-family:'Poppins', sans-serif;  
+}
+
+.form-input-busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    border:none;
+    background: none;
+    outline: none;
+    color: white;  
 }
 
 .iconos-header{
@@ -849,7 +861,7 @@ ul{
 
     .barra-busqueda{
         width: 50%;
-        padding: 10px;
+        padding: 2px;
         margin:2%
     }
 
@@ -1048,7 +1060,7 @@ ul{
 
     .barra-busqueda{
         width: 50%;
-        padding: 10px;
+        padding: 5px;
     }
 
     .barra-busqueda ::placeholder{
@@ -1164,6 +1176,21 @@ ul{
         height: 2em;
         border-radius: 50%;
     }
+
+/*---------------------carrito de compras-----------------------*/
+    .infocompra, .products-com{
+        width: 80%;
+    }
+
+    .price-cdc{
+        width: 100%;
+        text-align: center;
+        margin: 10%;
+        font-size: 100%;
+        color: white;
+    }
+
+
 }
 
 /*---------------------style productCart-----------------------*/
@@ -1175,6 +1202,40 @@ main section .products-com{
     flex-direction: column;
     flex-wrap: wrap;
     width: 23%;
+}
+
+main section .productos-products-com{
+width: 100%;
+background-color: rgba(0, 11, 31, 0.9);;
+border: 1.5px solid #00DFEF;
+box-shadow: 0px 0px 2px 2px #00DFEF;
+color: white;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+box-shadow: none;
+transition: width 2s, height 4s;
+padding: 2%;
+margin: 4%;
+border-radius:15px;
+-webkit-border-radius:15px;
+-moz-border-radius:15px;
+-ms-border-radius:15px;
+-o-border-radius:15px;}
+
+main section article:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 8px 2px #FF0D6D; 
+}
+
+.main-article-cdc{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
 }
 
 .headerinfocompra, .productosinfocompra, .totalinfocompra{
@@ -1216,9 +1277,21 @@ main section .products-com{
     box-shadow: 0px 0px 2px 2px #00DFEF;
 }
 
+.title-cdc{
+    width: 100%;
+    text-align: center;
+    margin: 10%;
+    font-size: 100%;
+    color: white;
+}
+
 .productCart-com{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
+}
+
+.price-cdc{
+    display:block;
 }

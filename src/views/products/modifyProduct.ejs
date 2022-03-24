@@ -4,7 +4,7 @@
 <body class="body-newProduct">
     <%- include('../partials/header') %>
     <main class="main-newProduct">
-        <form action="/" method="get">
+        <form action="/modifyProduct?_method=PUT" method="POST" enctype="multipart/form-data" multiple>
             <div class="items-new-product">
                 <label class="productName">
                     Nombre del producto

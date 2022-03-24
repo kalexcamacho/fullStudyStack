@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<%- include('../partials/head') %>
+
+    <body>
+
+        <%- include('../partials/header') %>
+
+            <main class="main-index">
+                <section class="last-visit">
+                    <div class="container-up">
+                        <div class="self-container-1">
+                            <h3>Basado en tu última visita</h3><br>
+                        </div>
+
+                        <div class="self-container-2">
+                            <a href="/allProducts">Todos los productos</a>
+                        </div>
+                        
+                        <div class="self-container-2">
+                            <a href="/newProduct">Crea tu curso</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="products">
+                        <% visited.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/productDetail/<%= specificProduct.id %>">
+                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
+                                    <div class="main-article">
+                                        <h4 class="title">
+                                            <%= specificProduct.name %>
+                                        </h4>
+                                        <p class="price">$<%= specificProduct.price %>
+                                        </p>
+                                        <p class="description">
+                                            <%= specificProduct.description %>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+
+                </section>
+
+                <section class="last-visit">
+                    <h3>Lo más nuevo</h3><br>
+                    <div class="products">
+                        <% newProduct.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/productDetail/<%= specificProduct.id %>">
+                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
+                                    <div class="main-article">
+                                        <h4 class="title">
+                                            <%= specificProduct.name %>
+                                        </h4>
+                                        <p class="price">$<%= specificProduct.price %></p>
+                                        <p class="description"><%= specificProduct.description %></p>
+                                    </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+                </section>
+
+                <section class="last-visit">
+                    <h3>Lo más calificado</h3><br>
+                    <div class="products">
+                        <% highRate.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/productDetail/<%= specificProduct.id %>">
+                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
+                                        <div class="main-article">
+                                            <h4 class="title">
+                                                <%= specificProduct.name %>
+                                            </h4>
+                                            <p class="price">$<%= specificProduct.price %>
+                                            </p>
+                                            <p class="description">
+                                        <%= specificProduct.description %>
+                                    </p>
+                                    </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+                </section>
+            </main>
+
+            <%- include('../partials/footer') %>
+
+    </body>
+
+</html>

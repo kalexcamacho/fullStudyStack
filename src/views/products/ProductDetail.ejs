@@ -2,9 +2,7 @@
 <html>
     <%- include('../partials/head') %>
     <body>
-
-        <%- include('../partials/header') %> 
-    
+        <%- include('../partials/header') %>     
     <main class="main_PD">   
         <div class="background_general_course">
             <section class="general_course">
@@ -27,13 +25,25 @@
                                 <span><a href="#">10 comentarios</a> </span>
                                 <span>100 estudiantes</span>
                             </li>
-                            <li class="li_text">
+                            <li class="li_text-3">
                                 <div class="creator_modify">
                                     <div class="creator">
                                         Creado por: Cesar Corregidor Carreño
                                     </div>
                                     <div class="modify">
-                                        <a href="/modifyProduct">Modifica tu curso</a>
+                                        <ul class="listModify">
+                                            <li>
+                                                <div class="modifyProduct">
+                                                    <a href="/modifyProduct">Modifica tu curso</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="deleteProduct">
+                                                    <a href="/deleteProduct">Eliminar tu curso</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+
                                     </div>
                                 </div>
                             </li>

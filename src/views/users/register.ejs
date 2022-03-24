@@ -9,9 +9,15 @@
             <form action="/" method="get">
                 <div class="items-formulario">
                     <label>
-                        Nombre y Apellido:
+                        Nombre:
                     </label>
-                    <input type="text" name="nombreYApellido" placeholder="Fulano De Tal" class="item">
+                    <input type="text" name="nombre" placeholder="Nombre" class="item">
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Apellido:
+                    </label>
+                    <input type="text" name="Apellido" placeholder="Apellido" class="item">
                 </div>
                 <div class="items-formulario">
                     <label>
@@ -31,6 +37,27 @@
                         Confirmacion contraseña:
                     </label>
                     <input type="password" name="contraseña" placeholder="Fulano123" class="item">
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Categoría
+                    </label>
+                    <div class="item-categorias">
+                        <select name="Category" class="item-categorias2">
+                            <option value="student" class="categoria-particular">Estudiante</option>
+                            <option value="teacher" class="categoria-particular">Profesor</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Imagen
+                    </label>
+                    <div class="userImage">
+                        <input type="file" name="usertImage" class="item-productImage">
+                    </div>
+                    
                 </div>
                 <div class="items-formulario">
                     <button type="submit" class="button-enviar-borrar"> Crear cuenta </button>

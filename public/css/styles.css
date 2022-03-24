@@ -39,9 +39,22 @@
     width: 60%;
 }
 
+.main-index .list-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.main-index .list-index li{
+    width: 100%;
+    margin: 1rem;
+}
 .main-index .self-container-2 a{
     font-family: 'Poppins', sans-serif;
     padding: 8px;    
+    font-size: 13px;
     margin-bottom: 5px;
     font-weight: bold;
     color: white;
@@ -51,7 +64,15 @@
     box-shadow: 0px 0px 2px 2px #00DFEF;    
 }
 
-.self-container-2:hover a{
+.self-container-2 .buttonAllProducts:hover  a{
+    font-weight: bold;
+    color:white;
+    background-color:#FF0D6D;
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;    
+}
+
+.self-container-2 .buttonNewProduct:hover  a{
     font-weight: bold;
     color:white;
     background-color:#FF0D6D;
@@ -612,6 +633,7 @@ form ::placeholder{
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+    backdrop-filter: blur(4px);
 }
 
 .main-newProduct ::placeholder{
@@ -1013,7 +1035,14 @@ ul{
         font-size: 1rem;   
     }
 
-    .main_PD .
+    .main_PD .modifyProduct{
+        width: 100%;
+        display: flex;
+    }
+    .main_PD .deleteProduct{
+        width: 100%;
+        display: flex;
+    }
 
     .main_PD .course_information{
         align-self: flex-start;
@@ -1029,7 +1058,7 @@ ul{
     .main-newProduct{
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 100px;
+        margin-top: 150px;
         padding-top: 10px;
     }
 
@@ -1095,6 +1124,37 @@ ul{
         backdrop-filter: blur(4px);
     }
 
+    /*------------------------------loging_register----------------------------------*/
+    
+    .items-formulario{
+        margin: 15px;
+        width:45%;
+        justify-content: center;
+    }
+    /*------------------------index-------------------------*/
+    .main-index .list-index {
+        flex-direction: row;      
+        justify-content: flex-end;
+    }
+    .main-index .self-container-2 {
+        width: 35%;
+    }
+    .main-index .list-index .buttonAllProducts{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .main-index .list-index .buttonNewProduct{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .main-index .self-container-2 a{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
     /*--------------------DetailProduct769------------------*/
     .main_PD .course_information,
     .main_PD .learn{
@@ -1112,8 +1172,24 @@ ul{
         font-size: 1.4rem;
     } 
 
-    /*-------------------*/
 
+    
+    .main-index .self-container-2 a{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /*--------------modifyProduct_createProduct--------------*/
+    .main-newProduct form{
+        border-radius: 20px;
+        backdrop-filter: blur(4px);
+    }
+    .main-newProduct .items-new-product{
+        margin: 15px;
+        width: 45%;
+        justify-content: center;
+    }
+    /*------------------------footer--------------------------*/
     footer{
         display: flex;
         flex-direction: row;

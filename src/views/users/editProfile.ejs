@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+    <body  class="fondo-login-register">
+
+        <%- include('../partials/header') %> 
+        
+        <main class="main-login">
+            <form action= "/editProfile/<%= profileToEdit.userId %>?_method=PUT" method="POST" enctype="multipart/form-data" multiple>
+                <div class="items-formulario">
+                    <label>
+                        Nombre y Apellido:
+                    </label>
+                    <input type="text" name="userName" value="<%= profileToEdit.userName %>" class="item">
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email" name="userEmail" value="<%= profileToEdit.userEmail %>" class="item">
+                    <p class="mensaje-alerta"></p>
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Contraseña:
+                    </label>
+                    <input type="userPassword" name="userPassword" class="item">
+                </div>
+                <div class="items-new-product">
+                    <label>
+                        Imagen
+                    </label>
+                    <div class="productImage">
+                        <input type="file" name="profileImage" class="item-productImage" multiple required>
+                    </div>
+                    
+                </div>
+                <div class="items-formulario">
+                    <button type="submit" class="button-enviar-borrar"> editar </button>
+                </div>            
+            </form>
+        </main>
+        
+        <%- include('../partials/footer') %>
+        
+    </body>
+</html>

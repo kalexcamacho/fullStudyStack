@@ -2,16 +2,18 @@
 <html>
     <%- include('../partials/head') %>
     <body>
-        <%- include('../partials/header') %>     
+
+        <%- include('../partials/header') %> 
+    
     <main class="main_PD">   
         <div class="background_general_course">
             <section class="general_course">
                 <div class="img_background">                
-                    <img alt="js" class="product_img_pd"  src= <%= "/images/productsImages/" + specificProduct.productImage %>>                     
+                    <img alt="js" class="product_img_pd"  src= <%= "/images/usersProfileImages/" + specificProfile.userImage %>>                     
                 </div>
                                         
                 <div class="introduction">    
-                    <div class="title_course"><h1><%= specificProduct.productName %></h1>                  
+                    <div class="title_course"><h1><%= specificProfile.userName %></h1>                  
                     </div> 
                     <div>
                         <ul class="introduction_text">
@@ -26,16 +28,16 @@
                                 <span><a href="#">10 comentarios</a> </span>
                                 <span>100 estudiantes</span>
                             </li>
-                            <li class="li_text-3">
+                            <li class="li_text">
                                 <div class="creator_modify">
                                     <div class="creator">
                                         Creado por: Cesar Corregidor Carreño
                                     </div>
                                     <div class="modify">
-                                        <a href= <%= "/modifyProduct/" + specificProduct.productId %> >Modifica tu curso</a>
+                                        <a href= <%= "/editProfile/" + specificProfile.userId %> >Modifica tu curso</a>
                                     </div>
                                     <div class="modify">
-                                        <form action="/productDetail/<%= specificProduct.productId %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                        <form action="/profile/<%= specificProfile.userId %>?_method=DELETE" method="POST" style="display: inline-flex">
                                             <button type="submit" class="action-button delete">Eliminar curso</button>
                                         </form>
                                     </div>
@@ -51,7 +53,7 @@
             <section class="course_information">
                 <div class="buy">                    
                     <div>
-                        <div class="price">$<%= specificProduct.productPrice %></div>
+                        <div class="price">$<%= specificProfile.userEmail %></div>
                             <button type="button" class="price_button">
                                 <div class="cart_shopping_add">Añadir al Carrito</div>
                             </button>                              
@@ -61,7 +63,7 @@
                     <h3>Descripción del producto</h3>
                     <ul class="general_list">
                         <li>
-                            <span><%= specificProduct.productDescription %></span>
+                            <span><%= specificProfile.userPassword %></span>
                         </li>
                         <li><span><i class="fas fa-video"></i></span>
                             <span>52 horas de video</span>

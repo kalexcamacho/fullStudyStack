@@ -21,55 +21,49 @@
 
                 <section class="last-visit">
                     <div class="container-up">
-                        <div class="self-container-1">
-                            <h3>Basado en tu última visita</h3><br>
-                        </div>                        
+                        <div class="self-container-1">                       
+                            <h3>Desarrollo Web</h3><br>
+                        </div> 
                     </div>
 
                     <div class="products">
-                        <% visited.forEach((specificProduct)=>{ %>
-                            <article>
-                                <a href="/productDetail/<%= specificProduct.id %>" class="products"> 
-                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
+                        <% desarrolloWeb.forEach((specificProduct)=>{ %>
+                            <article>                                
+                                <a href="/productDetail/<%= specificProduct.productId %>">
+                                    <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
+                                    <div class="main-article">
+                                    <h4 class="title"><%= specificProduct.productName %></h4>
+                                    <p class="price">$<%= specificProduct.productPrice %><p>                                        
+                                    </div>
+
+                                    <div>
+                                        <p class="description"><%= specificProduct.productDescription %></p>
+                                    </div>
+
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+
+                </section>
+
+                <section class="last-visit">
+                    <h3>Desarrollo Móvil</h3><br>
+                    <div class="products">
+                        <% desarrolloMovil.forEach((specificProduct)=>{ %>
+                            <article>                                
+                                <a href="/productDetail/<%= specificProduct.productId %>">
+                                    <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
                                     <div class="main-article">
                                         <h4 class="title">
-                                            <%= specificProduct.name %>
+                                            <%= specificProduct.productName %>
                                         </h4>
-                                        <p class="price">$<%= specificProduct.price %>
+                                        <p class="price">$<%= specificProduct.productPrice %>
                                         </p>                                        
                                     </div>
 
                                     <div>
-                                        <p class="description">
-                                            <%= specificProduct.description %>
-                                        </p>
-                                    </div>
-
-                                </a>
-                            </article><br>
-                            <% }) %>
-                    </div>
-
-                </section>
-
-                <section class="last-visit">
-                    <h3>Lo más nuevo</h3><br>
-                    <div class="products">
-                        <% newProduct.forEach((specificProduct)=>{ %>
-                            <article>
-                                <a href="/productDetail/<%= specificProduct.id %>" class="products">
-                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
-                                    <div class="main-article">
-                                        <h4 class="title">
-                                            <%= specificProduct.name %>
-                                        </h4>
-                                        <p class="price">$<%= specificProduct.price %></p>
-                                    </div>
-
-                                    <div>
-                                        <p class="description">
-                                            <%= specificProduct.description %>
-                                        </p>
+                                        <p class="description"><%= specificProduct.productDescription %></p>
                                     </div>
 
                                 </a>
@@ -79,21 +73,64 @@
                 </section>
 
                 <section class="last-visit">
-                    <h3>Lo más calificado</h3><br>
+                    <h3>Ciberseguridad</h3><br>
                     <div class="products">
-                        <% highRate.forEach((specificProduct)=>{ %>
+                        <% ciberseguridad.forEach((specificProduct)=>{ %>
                             <article>
-                                <a href="/productDetail/<%= specificProduct.id %>" class="products">
-                                    <img src="images/productsImages/<%= specificProduct.image %>" class="product_img">
-                                        <div class="main-article">
-                                            <h4 class="title">
-                                                <%= specificProduct.name %>
-                                            </h4>
-                                            <p class="price">$<%= specificProduct.price %></p>
-                                    </div>
-                                    <div>
-                                        <p class="description"> <%= specificProduct.description %></p>
-                                    </div>
+                                <a href="/productDetail/<%= specificProduct.productId %>">
+                                <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
+                                <div class="main-article">
+                                    <h4 class="title">
+                                        <%= specificProduct.productName %>
+                                    </h4>
+                                    <p class="price">$<%= specificProduct.productPrice %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="description"><%= specificProduct.productDescription %></p>
+                                </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+                </section>
+
+                <section class="last-visit">
+                    <h3>Ciencia De Datos</h3><br>
+                    <div class="products">
+                        <% cienciaDeDatos.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/productDetail/<%= specificProduct.productId %>">
+                                <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
+                                <div class="main-article">
+                                    <h4 class="title"><%= specificProduct.productName %></h4>
+                                    <p class="price">$<%= specificProduct.productPrice %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="description"><%= specificProduct.productDescription %></p>
+                                </div>
+                                </a>
+                            </article><br>
+                            <% }) %>
+                    </div>
+                </section>
+
+                <section class="last-visit">
+                    <h3>Inteligencia Artificial</h3><br>
+                    <div class="products">
+                        <% inteligenciaArtificial.forEach((specificProduct)=>{ %>
+                            <article>
+                                <a href="/productDetail/<%= specificProduct.productId %>">
+                                <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
+                                <div class="main-article">
+                                    <h4 class="title"><%= specificProduct.productName %>
+                                    </h4>
+                                    <p class="price">$<%= specificProduct.productPrice %></p>
+                                </div>
+                                <div>
+                                    <p class="description"><%= specificProduct.productDescription %></p>
+                                </div>
                                 </a>
                             </article><br>
                             <% }) %>

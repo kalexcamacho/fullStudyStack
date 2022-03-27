@@ -34,25 +34,53 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     padding-right: 2%;
     font-size: 10px;
     text-decoration: none;
+    width: 100%;
+    
+}
+.main-index .self-container-1{
+    width: 60%;
 }
 
+.main-index .list-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.main-index .list-index li{
+    width: 100%;
+    margin: 1rem;
+}
 .main-index .self-container-2 a{
     font-family: 'Poppins', sans-serif;
-    padding: 8px;
+    padding: 8px;    
+    font-size: 10px;
     margin-bottom: 5px;
     font-weight: bold;
     color: white;
     background-color:#000B1F;
     border-radius: 20px;
     border: 1.5px solid #00DFEF;
-    box-shadow: 0px 0px 2px 2px #00DFEF;    
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    width: 100%;  
+    text-decoration: none;  
 }
 
-.self-container-2:hover a{
+.self-container-2 .buttonAllProducts:hover  a{
+    font-weight: bold;
+    color:white;
+    background-color:#FF0D6D;
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;    
+}
+
+.self-container-2 .buttonNewProduct:hover  a{
     font-weight: bold;
     color:white;
     background-color:#FF0D6D;
@@ -69,7 +97,7 @@ main section .products{
 }
 
 main h3{
-    padding: 20px 20px 0px 50px;
+    padding: 20px 20px 0px 20px;
     margin-bottom: 0px;
     color: white;
 }
@@ -160,14 +188,25 @@ article div.main-article{
     justify-content:space-between;
     margin-right: 2%;
 }
+
+.main_PD .creator_modify .creator{
+    width: 50%;
+}
 .main_PD .introduction_text{
     list-style-type: none;
 }
+.main_PD .listModify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;    
+}
 
 .main_PD .creator_modify a{
+    font-size: 0.65rem;
     font-family: 'Poppins', sans-serif;
     padding: 8px;
-    margin-bottom: 5px;
     font-weight: bold;
     color: white;
     background-color:#000B1F;
@@ -176,7 +215,14 @@ article div.main-article{
     box-shadow: 0px 0px 2px 2px #00DFEF;    
 }
 
-.main_PD .creator_modify:hover a{
+.main_PD .creator_modify .modifyProduct:hover a{
+    font-weight: bold;
+    color:white;
+    background-color:#FF0D6D;
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;    
+}
+.main_PD .creator_modify .deleteProduct:hover a{
     font-weight: bold;
     color:white;
     background-color:#FF0D6D;
@@ -409,7 +455,7 @@ article div.main-article{
     float: right;
     font-size: 15px;
 }
-
+/*-------------------------register-------------------------*/
 .main-login{
     margin-left: 10px;
     margin-right: 10px;
@@ -439,13 +485,82 @@ form ::placeholder{
 }
 
 
-.items-formulario label{
+.main-login .items-formulario label{
     margin-bottom: 5px;
     display: block;
     font-weight: bold;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+.main-login .item-categorias{
+    width: 100%;
+}
+
+.main-login .item-categorias2{
+    width: 100%;
+    background-color: #000B1F;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.main-login .item-categorias2:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+}
+.main-login .userImage{
+    width: 100%;
+    position: relative;
+    border: 1.5px solid #00DFEF;
+    border-radius: 20px;
+}
+
+.main-login .userImage:hover{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+    border-radius: 20px;
+}
+
+.main-login .userImage::before{
+    background-color: #000B1F;
+    color: white;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    border-radius: 20px;;
+    content: 'Seleccionar Imagen'; /* texto por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.main-login .userImage:hover::before{
+    border: 1.5px solid #FF0D6D;
+    box-shadow: 0px 0px 2px 2px #FF0D6D;
+}
+
+.main-login .userImage input[type="file"] {
+    opacity: 0;
+    height: 37px;
+    width: 100%;
+  }
+
 
 .item{
     width: 100%;
@@ -528,6 +643,7 @@ form ::placeholder{
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+    backdrop-filter: blur(4px);
 }
 
 .main-newProduct ::placeholder{
@@ -572,7 +688,6 @@ form ::placeholder{
 
 .main-newProduct .productImage::before{
     background-color: #000B1F;
-    height: 18.355px;
     color: white;
     display: flex;
     padding: 8px;
@@ -581,7 +696,7 @@ form ::placeholder{
     border: 1.5px solid #00DFEF;
     box-shadow: 0px 0px 2px 2px #00DFEF;
     border-radius: 20px;;
-    content: 'Seleccionar Imagen'; /* testo por defecto */
+    content: 'Seleccionar Imagen'; /* texto por defecto */
     position: absolute;
     left: 0;
     right: 0;
@@ -935,6 +1050,18 @@ ul{
         padding: 0.2rem;
         font-size: 1.2rem;
     }
+    .main_PD .creator_modify a{
+        font-size: 1rem;   
+    }
+
+    .main_PD .modifyProduct{
+        width: 100%;
+        display: flex;
+    }
+    .main_PD .deleteProduct{
+        width: 100%;
+        display: flex;
+    }
 
     .main_PD .course_information{
         align-self: flex-start;
@@ -950,7 +1077,7 @@ ul{
     .main-newProduct{
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 100px;
+        margin-top: 150px;
         padding-top: 10px;
     }
 
@@ -1016,6 +1143,37 @@ ul{
         backdrop-filter: blur(4px);
     }
 
+    /*------------------------------loging_register----------------------------------*/
+    
+    .items-formulario{
+        margin: 15px;
+        width:45%;
+        justify-content: center;
+    }
+    /*------------------------index-------------------------*/
+    .main-index .list-index {
+        flex-direction: row;      
+        justify-content: flex-end;
+    }
+    .main-index .self-container-2 {
+        width: 35%;
+    }
+    .main-index .list-index .buttonAllProducts{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .main-index .list-index .buttonNewProduct{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .main-index .self-container-2 a{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
     /*--------------------DetailProduct769------------------*/
     .main_PD .course_information,
     .main_PD .learn{
@@ -1033,8 +1191,24 @@ ul{
         font-size: 1.4rem;
     } 
 
-    /*-------------------*/
 
+    
+    .main-index .self-container-2 a{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /*--------------modifyProduct_createProduct--------------*/
+    .main-newProduct form{
+        border-radius: 20px;
+        backdrop-filter: blur(4px);
+    }
+    .main-newProduct .items-new-product{
+        margin: 15px;
+        width: 45%;
+        justify-content: center;
+    }
+    /*------------------------footer--------------------------*/
     footer{
         display: flex;
         flex-direction: row;

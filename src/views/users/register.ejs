@@ -6,31 +6,55 @@
         <%- include('../partials/header') %> 
         
         <main class="main-login">
-            <form action="/" method="POST">
+            <form action="/register" method="POST" enctype="multipart/form-data" multiple>
                 <div class="items-formulario">
                     <label>
-                        Nombre y Apellido:
+                        Nombre:
                     </label>
-                    <input type="text" name="nombreYApellido" placeholder="Fulano De Tal" class="item">
+                    <input type="text" name="userName" placeholder="Fulano De Tal" class="item">
                 </div>
                 <div class="items-formulario">
                     <label>
                         Email:
                     </label>
-                    <input type="email" name="email" placeholder="example@email.com" class="item">
+                    <input type="email" name="userEmail" placeholder="example@email.com" class="item">
                     <p class="mensaje-alerta"></p>
                 </div>
                 <div class="items-formulario">
                     <label>
                         Contraseña:
                     </label>
-                    <input type="password" name="contraseña" placeholder="Fulano123" class="item">
+                    <input type="password" name="userPassword" placeholder="Fulano123" class="item">
+                </div>
+                <div class="items-new-product">
+                    <label>
+                        Imagen
+                    </label>
+                    <div class="productImage">
+                        <input type="file" name="profileImage" class="item-productImage" multiple required>
+                </div>
+                    
                 </div>
                 <div class="items-formulario">
                     <label>
-                        Confirmacion contraseña:
+                        Categoría
                     </label>
-                    <input type="password" name="contraseña" placeholder="Fulano123" class="item">
+                    <div class="item-categorias">
+                        <select name="Category" class="item-categorias2">
+                            <option value="student" class="categoria-particular">Estudiante</option>
+                            <option value="teacher" class="categoria-particular">Profesor</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Imagen
+                    </label>
+                    <div class="userImage">
+                        <input type="file" name="usertImage" class="item-productImage">
+                    </div>
+                    
                 </div>
                 <div class="items-formulario">
                     <button type="submit" class="button-enviar-borrar"> Crear cuenta </button>

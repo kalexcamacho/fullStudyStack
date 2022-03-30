@@ -4,7 +4,8 @@
 <body>
     <%- include('../partials/header') %>
 
-    <div class="products">
+    <main class="main-allProducts">
+        <div class = "products">
         <% products.forEach((specificProduct)=>{ %>
             <article>
                 <a href="/productDetail/<%= specificProduct.productId %>">
@@ -22,7 +23,8 @@
                 </a>
             </article><br>
             <% }) %>
-    </div>
+        </div>
+        </main>
 
     <%- include('../partials/footer') %>
     

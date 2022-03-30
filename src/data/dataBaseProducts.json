@@ -1,13 +1,5 @@
 [
   {
-    "productId": 1,
-    "productName": "Java Script",
-    "productDescription": "lorem ipsum",
-    "productImage": "js.jpg",
-    "productCategory": "desarrolloWeb",
-    "productPrice": 200
-  },
-  {
     "productId": 2,
     "productName": "PHP",
     "productDescription": "lorem ipsum",
@@ -38,14 +30,6 @@
     "productImage": "js.jpg",
     "productCategory": "inteligenciaArtificial",
     "productPrice": 200
-  },
-  {
-    "productId": 6,
-    "productName": "PHP",
-    "productDescription": "lorem ipsum",
-    "productImage": "php.png",
-    "productCategory": "desarrolloWeb",
-    "productPrice": 250
   },
   {
     "productId": 7,

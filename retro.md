@@ -49,7 +49,7 @@
 
 A continuación de acuerdo a la metodología estrella hemos definido los siguiente:
 
-<h1>Sprint4<h1>
+<h1>Sprint4</h1>
 
 <table>
     <tr>

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const {validationResult} = require('express-validator');
 
 const productsFilePath = path.join(__dirname, '../data/dataBaseProducts.json');
 const profilesFilePath = path.join(__dirname, '../data/dataBaseProfiles.json');
@@ -30,12 +31,17 @@ const usersController = {
     register: (req, res) => res.render('./users/register'),
     storeProfile: (req, res) =>{
         const profiles = JSON.parse(fs.readFileSync(profilesFilePath, 'utf-8'));
-		let newProfile = {
+		let errorsValidation = validationResult(req);
+        if(errorsValidation.errors.length > 0){
+            return res.render('./users/register',{errors: errorsValidation.errors})
+        }
+        let newProfile = {
             userId: Date.now(),
             userName: req.body.userName,
             userEmail: req.body.userEmail,
-            userImage: req.file.filename,	
-            userPassword: req.body.userPassword
+            userCategory: req.body.userCategory,
+            userPassword: req.body.userPassword,
+            userImage: (req.file)?req.file.filename:"profile_blank.png"	
 		}
 		profiles.push(newProfile);
 
@@ -55,8 +61,9 @@ const usersController = {
         let profileToEdit = profiles.find((specificProfile)=> specificProfile.userId == req.params.id);
             profileToEdit.userName= req.body.userName;
             profileToEdit.userEmail= req.body.userEmail;
+            profileToEdit.userCategory= req.body.userCategory,
             profileToEdit.userPassword= req.body.userPassword;
-            profileToEdit.userImage = req.file.filename;
+            profileToEdit.userImage = (req.file)?req.file.filename:profileToEdit.userImage;
             
         let profilesJSON=JSON.stringify(profiles, null, 2);
         fs.writeFileSync(profilesFilePath, profilesJSON);

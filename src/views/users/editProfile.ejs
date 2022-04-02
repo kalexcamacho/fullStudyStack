@@ -24,14 +24,26 @@
                     <label>
                         Contraseña:
                     </label>
-                    <input type="userPassword" name="userPassword" class="item">
+                    <input type="Password" name="userPassword" class="item">
+                </div>
+                <div class="items-formulario">
+                    <label>
+                        Categoría
+                    </label>
+                    <div class="item-categorias">
+                        <select name="userCategory" class="item-categorias2">
+                            <option value="" class="categoria-particular">Tipo de Usuario</option>
+                            <option value="student" class="categoria-particular">Estudiante</option>
+                            <option value="teacher" class="categoria-particular">Profesor</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="items-new-product">
                     <label>
                         Imagen
                     </label>
                     <div class="productImage">
-                        <input type="file" name="profileImage" class="item-productImage" multiple required>
+                        <input type="file" name="profileImage" class="item-productImage" multiple>
                     </div>
                     
                 </div>

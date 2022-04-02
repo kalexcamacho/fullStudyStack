@@ -24,9 +24,9 @@ const productsController = {
             productId: Date.now(),
             productName: req.body.productName,
             productDescription: req.body.productDescription,
-            productImage: req.file.filename,	
             productCategory: req.body.productCategory,	
-            productPrice: req.body.productPrice
+            productPrice: req.body.productPrice,
+            productImage: (req.file)?req.file.filename:"sinImagen.png"	
 		}
 		products.push(newProduct);
 
@@ -48,7 +48,7 @@ const productsController = {
         productToEdit.productDescription= req.body.productDescription;
         productToEdit.productCategory= req.body.productCategory;
         productToEdit.productPrice= req.body.productPrice;
-        productToEdit.productImage = req.file.filename;
+        productToEdit.productImage = (req.file)?req.file.filename:productToEdit.productImage;
         
     let productsJSON=JSON.stringify(products, null, 2);
     fs.writeFileSync(productsFilePath, productsJSON);

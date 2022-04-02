@@ -56,14 +56,6 @@
     "productPrice": 200
   },
   {
-    "productId": 10,
-    "productName": "PHP",
-    "productDescription": "lorem ipsum",
-    "productImage": "1648322028671.png",
-    "productCategory": "inteligenciaArtificial",
-    "productPrice": "250"
-  },
-  {
     "productId": 11,
     "productName": "HTML",
     "productDescription": "lorem ipsum",

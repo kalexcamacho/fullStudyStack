@@ -4,6 +4,7 @@ const router = express.Router();
 const multer = require ('multer');
 const path = require('path');
 const usersController = require('../controllers/usersController');
+const registerValidations = require('../middlewares/registerValidationsMiddlewares');
 
 //---------------------------------------------- Multer Configurations -----------------------------------------------------------------------
 let storage = multer.diskStorage({
@@ -26,7 +27,7 @@ router.get('/login', usersController.login);
 router.get('/profile/:id', usersController.profile);
 
 router.get('/register', usersController.register);
-router.post('/register', upload.single('profileImage'), usersController.storeProfile);
+router.post('/register', upload.single('profileImage'), registerValidations, usersController.storeProfile);
 
 router.get('/editProfile/:id', usersController.editProfile);
 router.put('/editProfile/:id', upload.single('profileImage'), usersController.updateEditedProfile);

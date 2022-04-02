@@ -1,9 +1,10 @@
 [
   {
     "userId": 1,
-    "userName": "Pepito Perez",
-    "userEmail": "pepito@perez.com",
-    "userPassword": "pepito23",
-    "userImage": "profile_blank.png"
+    "userName": "Alexander Bernal",
+    "userEmail": "alex@bernal.com",
+    "userCategory": "student",
+    "userPassword": "hola1234",
+    "userImage": "1648934724613.jpg"
   }
 ]

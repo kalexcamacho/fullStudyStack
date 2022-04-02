@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
-    <body  class="fondo-login-register">
+<%- include('../partials/head') %>
 
-        <%- include('../partials/header') %> 
-        
-        <main class="main-login">
-            <form action="/register" method="POST" enctype="multipart/form-data" multiple>
-                <div class="items-formulario">
-                    <label>
-                        Nombre:
-                    </label>
-                    <input type="text" name="userName" placeholder="Fulano De Tal" class="item">
-                </div>
-                <div class="items-formulario">
-                    <label>
-                        Email:
-                    </label>
-                    <input type="email" name="userEmail" placeholder="example@email.com" class="item">
-                    <p class="mensaje-alerta"></p>
-                </div>
-                <div class="items-formulario">
-                    <label>
-                        Contraseña:
-                    </label>
-                    <input type="password" name="userPassword" placeholder="Fulano123" class="item">
-                </div>
-                <!--<div class="items-new-product">
-                    <label>
-                        Imagen
-                    </label>
-                    <div class="productImage">
-                        <input type="file" name="profileImage" class="item-productImage" multiple required>
-                    </div>                    
-                </div>-->
-                <div class="items-formulario">
-                    <label>
-                        Categoría
-                    </label>
-                    <div class="item-categorias">
-                        <select name="Category" class="item-categorias2">
-                            <option value="student" class="categoria-particular">Estudiante</option>
-                            <option value="teacher" class="categoria-particular">Profesor</option>
-                        </select>
-                        
+    <body class="fondo-login-register">
+
+        <%- include('../partials/header') %>
+
+            <% function showError (param){ %>
+                <p class="">
+                    <% if (typeof errors !="undefined" ) { %>
+                            <% errors.forEach(specificError=> { %>
+                                <% if (specificError.param === param ) { %>
+                                            <%= specificError.msg %>
+                                    <% } %>
+                            <% }) %>
+                    <% } %>
+                </p>
+            <% } %>  
+
+            <main class="main-login">
+                <form action="/register" method="POST" enctype="multipart/form-data" multiple>
+                    <div class="items-formulario">
+                        <label>
+                            Nombre:
+                        </label>
+                        <input type="text" name="userName" placeholder="Fulano De Tal" class="item">
+                        <% showError('userName') %> 
                     </div>
-                </div>
-                <div class="items-formulario">
-                    <label>
-                        Imagen
-                    </label>
-                    <div class="userImage">
-                        <input type="file" name="profileImage" class="item-productImage" multiple required>
+                    <div class="items-formulario">
+                        <label>
+                            Email:
+                        </label>
+                        <input type="email" name="userEmail" placeholder="example@email.com" class="item">
+                        <% showError('userEmail') %>
                     </div>
-                    
-                </div>
-                <div class="items-formulario">
-                    <button type="submit" class="button-enviar-borrar"> Crear cuenta </button>
-                </div>            
-                <div class="caja-link-login">
-                    <span class="link-login">¿Ya tienes cuenta? </span><a href="/login" class="link-login-2">Iniciar sesión</a>
-                </div>
-            </form>
-        </main>
-        
-        <%- include('../partials/footer') %>
-        
+                    <div class="items-formulario">
+                        <label>
+                            Contraseña:
+                        </label>
+                        <input type="password" name="userPassword" placeholder="Fulano123" class="item">
+                        <% showError('userPassword') %>
+                    </div>
+                    <div class="items-formulario">
+                        <label>
+                            Categoría
+                        </label>
+                        <div class="item-categorias">
+                            <select name="userCategory" class="item-categorias2">
+                                <option value="" class="categoria-particular">Tipo de Usuario</option>
+                                <option value="student" class="categoria-particular">Estudiante</option>
+                                <option value="teacher" class="categoria-particular">Profesor</option>
+                            </select>
+                            <% showError('userCategory') %>
+                        </div>
+                    </div>
+                    <div class="items-formulario">
+                        <label>
+                            Imagen
+                        </label>
+                        <div class="userImage">
+                            <input type="file" name="profileImage" class="item-productImage" multiple>
+                        </div>
+
+                    </div>
+                    <div class="items-formulario">
+                        <button type="submit" class="button-enviar-borrar"> Crear cuenta </button>
+                    </div>
+                    <div class="caja-link-login">
+                        <span class="link-login">¿Ya tienes cuenta? </span><a href="/login" class="link-login-2">Iniciar
+                            sesión</a>
+                    </div>
+                </form>
+            </main>
+
+            <%- include('../partials/footer') %>
+
     </body>
+
 </html>

@@ -34,11 +34,11 @@
                                         Creado por: Cesar Corregidor Carreño
                                     </div>
                                     <div class="modify">
-                                        <a href= <%= "/editProfile/" + specificProfile.userId %> >Modifica tu curso</a>
+                                        <a href= <%= "/editProfile/" + specificProfile.userId %> >Editar Perfil</a>
                                     </div>
                                     <div class="modify">
                                         <form action="/profile/<%= specificProfile.userId %>?_method=DELETE" method="POST" style="display: inline-flex">
-                                            <button type="submit" class="action-button delete">Eliminar curso</button>
+                                            <button type="submit" class="action-button delete">Eliminar Perfil</button>
                                         </form>
                                     </div>
                                 </div>

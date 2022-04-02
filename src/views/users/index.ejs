@@ -5,50 +5,41 @@
     <body>
 
         <%- include('../partials/header') %>
+        
+            <main class="main-index"><br>
 
-            <main class="main-index">
+                <div class="container-up">            
+                    <div class="self-container-1p">
+                        <a href="/products">Todos los productos</a>
+                    </div>
+                    
+                    <div class="self-container-2p">
+                        <a href="/newProduct">Crea tu curso</a>
+                    </div>
+                    
+                </div><br>
+
                 <section class="last-visit">
                     <div class="container-up">
-                        <div class="self-container-1">
+                        <div class="self-container-1">                       
                             <h3>Desarrollo Web</h3><br>
-                        </div>
-
-                        <div class="self-container-2">
-                            <ul class="list-index">
-                                <li class="allProducts">
-                                    <div class="buttonAllProducts">
-                                        <a href="/allProducts">Todos los productos</a>
-                                    </div>
-                                    
-                                </li>
-                                
-                                <li class="newProduct">
-                                    <div class="buttonNewProduct">
-                                        <a href="/newProduct" >Crea tu curso</a>
-                                    </div>
-                                    
-                                </li>
-                            </ul>
-                            
-                        </div>                       
-                        
+                        </div> 
                     </div>
 
                     <div class="products">
                         <% desarrolloWeb.forEach((specificProduct)=>{ %>
-                            <article>
+                            <article>                                
                                 <a href="/productDetail/<%= specificProduct.productId %>">
                                     <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
                                     <div class="main-article">
-                                        <h4 class="title">
-                                            <%= specificProduct.productName %>
-                                        </h4>
-                                        <p class="price">$<%= specificProduct.productPrice %>
-                                        </p>
-                                        <p class="">
-                                            <%= specificProduct.productDescription %>
-                                        </p>
+                                    <h4 class="title"><%= specificProduct.productName %></h4>
+                                    <p class="price">$<%= specificProduct.productPrice %><p>                                        
                                     </div>
+
+                                    <div>
+                                        <p class="description"><%= specificProduct.productDescription %></p>
+                                    </div>
+
                                 </a>
                             </article><br>
                             <% }) %>
@@ -60,19 +51,21 @@
                     <h3>Desarrollo Móvil</h3><br>
                     <div class="products">
                         <% desarrolloMovil.forEach((specificProduct)=>{ %>
-                            <article>
+                            <article>                                
                                 <a href="/productDetail/<%= specificProduct.productId %>">
                                     <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
                                     <div class="main-article">
                                         <h4 class="title">
-                                            <%= specificProduct.name %>
+                                            <%= specificProduct.productName %>
                                         </h4>
                                         <p class="price">$<%= specificProduct.productPrice %>
-                                        </p>
-                                        <p class="">
-                                            <%= specificProduct.productDescription %>
-                                        </p>
+                                        </p>                                        
                                     </div>
+
+                                    <div>
+                                        <p class="description"><%= specificProduct.productDescription %></p>
+                                    </div>
+
                                 </a>
                             </article><br>
                             <% }) %>
@@ -88,13 +81,13 @@
                                 <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
                                 <div class="main-article">
                                     <h4 class="title">
-                                        <%= specificProduct.name %>
+                                        <%= specificProduct.productName %>
                                     </h4>
                                     <p class="price">$<%= specificProduct.productPrice %>
                                     </p>
-                                    <p class="">
-                                        <%= specificProduct.productDescription %>
-                                    </p>
+                                </div>
+                                <div>
+                                    <p class="description"><%= specificProduct.productDescription %></p>
                                 </div>
                                 </a>
                             </article><br>
@@ -110,14 +103,12 @@
                                 <a href="/productDetail/<%= specificProduct.productId %>">
                                 <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
                                 <div class="main-article">
-                                    <h4 class="title">
-                                        <%= specificProduct.name %>
-                                    </h4>
+                                    <h4 class="title"><%= specificProduct.productName %></h4>
                                     <p class="price">$<%= specificProduct.productPrice %>
                                     </p>
-                                    <p class="">
-                                        <%= specificProduct.productDescription %>
-                                    </p>
+                                </div>
+                                <div>
+                                    <p class="description"><%= specificProduct.productDescription %></p>
                                 </div>
                                 </a>
                             </article><br>
@@ -133,15 +124,13 @@
                                 <a href="/productDetail/<%= specificProduct.productId %>">
                                 <img src="images/productsImages/<%= specificProduct.productImage %>" class="product_img">
                                 <div class="main-article">
-                                    <h4 class="title">
-                                        <%= specificProduct.name %>
+                                    <h4 class="title"><%= specificProduct.productName %>
                                     </h4>
-                                    <p class="price">$<%= specificProduct.productPrice %>
-                                    </p>
-                                    <p class="">
-                                        <%= specificProduct.productDescription %>
-                                    </p>
-                                    </div>
+                                    <p class="price">$<%= specificProduct.productPrice %></p>
+                                </div>
+                                <div>
+                                    <p class="description"><%= specificProduct.productDescription %></p>
+                                </div>
                                 </a>
                             </article><br>
                             <% }) %>

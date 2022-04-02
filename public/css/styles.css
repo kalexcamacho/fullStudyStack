@@ -13,6 +13,7 @@
     border-bottom: 0;
     margin-bottom: 0;
 }
+
 /*---------------------style main-----------------------*/
 .main-index{
     width: 90%;
@@ -26,6 +27,9 @@
     -o-border-radius:20px;
     -webkit-border-radius: 20;
 }
+.description{
+    display: none;
+}
 
 .main-index .container-up{
     display: flex;
@@ -33,10 +37,10 @@
     align-items: center;
     justify-content:space-between;
     padding-right: 2%;
+    font-size: 10px;
+    text-decoration: none;
     width: 100%;
-}
-.main-index .self-container-1{
-    width: 60%;
+    
 }
 
 .main-index .list-index {
@@ -51,39 +55,43 @@
     width: 100%;
     margin: 1rem;
 }
-.main-index .self-container-2 a{
+.main-index .self-container-1p{
+    text-align: right;    
+}
+.main-index .self-container-2p{
+    text-align: right;    
+}
+
+.main-index .self-container-1p a,
+.main-index .self-container-2p a{
     font-family: 'Poppins', sans-serif;
     padding: 8px;    
-    font-size: 13px;
+    font-size: 10px;
     margin-bottom: 5px;
     font-weight: bold;
     color: white;
     background-color:#000B1F;
     border-radius: 20px;
     border: 1.5px solid #00DFEF;
-    box-shadow: 0px 0px 2px 2px #00DFEF;    
+    box-shadow: 0px 0px 2px 2px #00DFEF;
+    width: 60%;  
+    text-decoration: none;  
 }
 
-.self-container-2 .buttonAllProducts:hover  a{
+.main-index .self-container-1p:hover  a,
+.main-index .self-container-2p:hover  a{
     font-weight: bold;
     color:white;
     background-color:#FF0D6D;
     border: 1.5px solid #FF0D6D;
     box-shadow: 0px 0px 2px 2px #FF0D6D;    
 }
-
-.self-container-2 .buttonNewProduct:hover  a{
-    font-weight: bold;
-    color:white;
-    background-color:#FF0D6D;
-    border: 1.5px solid #FF0D6D;
-    box-shadow: 0px 0px 2px 2px #FF0D6D;    
-}
-
 
 main section .products{
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
 }
 
 main h3{
@@ -136,7 +144,35 @@ article div.main-article{
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
+    text-decoration: none; 
+    color: white;   
 }
+/*.....................................allProducts---------------------------------------------------------*/
+
+.main-allProducts{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.main-allProducts .products {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+}
+
+.main-allProducts .products article{
+    width: 100%;
+    border: 1.5px solid #00DFEF;
+    background-color: rgba(0, 11, 31, 0.9);
+    transition: width 2s, height 4s;
+    padding: 2%;
+    margin: 4%;
+    border-radius: 15px;
+
+}
+
 /*--------------------------------------ProductDetail-------------------------------------------------------*/
 
 .main_PD h1{
@@ -193,6 +229,14 @@ article div.main-article{
     list-style-type: none;    
 }
 
+.main_PD .creator_modify form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .main_PD .creator_modify a{
     font-size: 0.65rem;
     font-family: 'Poppins', sans-serif;
@@ -205,6 +249,20 @@ article div.main-article{
     box-shadow: 0px 0px 2px 2px #00DFEF;    
 }
 
+.main_PD .creator_modify button{
+    width: 100%;
+    font-size: 0.65rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    background-color:#000B1F;
+    border-radius: 20px;
+    border: 1.5px solid #00DFEF;
+    box-shadow: 0px 0px 2px 2px #00DFEF;    
+}
+
+
 .main_PD .creator_modify .modifyProduct:hover a{
     font-weight: bold;
     color:white;
@@ -212,7 +270,7 @@ article div.main-article{
     border: 1.5px solid #FF0D6D;
     box-shadow: 0px 0px 2px 2px #FF0D6D;    
 }
-.main_PD .creator_modify .deleteProduct:hover a{
+.main_PD .creator_modify .deleteProduct:hover button{
     font-weight: bold;
     color:white;
     background-color:#FF0D6D;
@@ -439,11 +497,20 @@ article div.main-article{
     color: #FF0D6D;
 }
 
+.button-busqueda{
+    border: none;
+}
+
 .button-busqueda i{
     border: none;
     color: white;
+    background-color: #000713;
     float: right;
     font-size: 15px;
+}
+
+.button-busqueda i:hover{
+    color : #FF0D6D;
 }
 /*-------------------------register-------------------------*/
 .main-login{
@@ -452,7 +519,7 @@ article div.main-article{
     margin-top: 50px;
 }
 
-form{
+.main-login form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,7 +528,7 @@ form{
     border-radius: 5px;
 }
 
-form ::placeholder{
+.main.login form ::placeholder{
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -509,7 +576,7 @@ form ::placeholder{
     border: 1.5px solid #FF0D6D;
     box-shadow: 0px 0px 2px 2px #FF0D6D;
 }
-.main-login .userImage{
+.main-login .userImage{ 
     width: 100%;
     position: relative;
     border: 1.5px solid #00DFEF;
@@ -868,7 +935,16 @@ ul{
         width: 45%;
         display: flex;
     }
-
+    article div.main-article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+    }
+    
     .main-index{
         margin-top: 80px;
     }
@@ -984,6 +1060,16 @@ ul{
     form{
         border-radius: 10px;
     }
+
+        /*-------------------------allProducts_481px------------------*/
+        .main-allProducts{
+            margin-top: 80px;
+        }
+
+        .main-allProducts .products article{
+            width: 45%;
+            margin: 5px;
+        }
 
     /*------------------------DetailProduct481---------------------------*/
     .main_PD .containt_2{
@@ -1131,14 +1217,25 @@ ul{
         width:45%;
         justify-content: center;
     }
+
+    /*-------------------------allProducts_481px------------------*/
+    .main-allProducts{
+        margin-top: 150px;
+    }
+
+    .main-allProducts .products article{
+        width: 20%;
+        margin: 10px;
+    }
+
     /*------------------------index-------------------------*/
     .main-index .list-index {
         flex-direction: row;      
         justify-content: flex-end;
     }
-    .main-index .self-container-2 {
-        width: 35%;
-    }
+    
+
+    .main-index .li
     .main-index .list-index .buttonAllProducts{
         width: 100%;
         display: flex;
@@ -1150,7 +1247,8 @@ ul{
         justify-content: flex-end;
     }
     
-    .main-index .self-container-2 a{
+    .main-index .self-container-1p a,
+    .main-index .self-container-2p a{
         font-size: 1rem;
         text-align: center;
     }
@@ -1252,6 +1350,9 @@ ul{
         height: 2em;
         border-radius: 50%;
     }
+    .description{
+        display: block;
+    }
 
 /*---------------------carrito de compras-----------------------*/
     .infocompra, .products-com{
@@ -1297,7 +1398,9 @@ border-radius:15px;
 -webkit-border-radius:15px;
 -moz-border-radius:15px;
 -ms-border-radius:15px;
--o-border-radius:15px;}
+-o-border-radius:15px;
+
+}
 
 main section article:hover{
     border: 1.5px solid #FF0D6D;

@@ -32,6 +32,24 @@
                                         Creado por: Cesar Corregidor Carreño
                                     </div>
                                     <div class="modify">
+                                        <ul class="listModify">
+                                            <li>
+                                                <div class="modifyProduct">
+                                                    <a href= <%= "/modifyProduct/" + specificProduct.productId %> >Modifica tu curso</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="deleteProduct">
+                                                    <form action="/productDetail/<%= specificProduct.productId %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                                        <button type="submit" class="action-button delete" >Eliminar curso</button>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <!--
+                                    <div class="modify">
                                         <a href= <%= "/modifyProduct/" + specificProduct.productId %> >Modifica tu curso</a>
                                     </div>
                                     <div class="modify">
@@ -39,6 +57,8 @@
                                             <button type="submit" class="action-button delete">Eliminar curso</button>
                                         </form>
                                     </div>
+                                    -->
+                                    
                                 </div>
                             </li>
                         </ul>

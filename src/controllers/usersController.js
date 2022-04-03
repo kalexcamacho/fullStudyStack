@@ -32,8 +32,9 @@ const usersController = {
     storeProfile: (req, res) =>{
         const profiles = JSON.parse(fs.readFileSync(profilesFilePath, 'utf-8'));
 		let errorsValidation = validationResult(req);
+        let oldData = req.body;
         if(errorsValidation.errors.length > 0){
-            return res.render('./users/register',{errors: errorsValidation.errors})
+            return res.render('./users/register',{errors: errorsValidation.errors, oldData})
         }
         let newProfile = {
             userId: Date.now(),
@@ -61,8 +62,8 @@ const usersController = {
         let profileToEdit = profiles.find((specificProfile)=> specificProfile.userId == req.params.id);
             profileToEdit.userName= req.body.userName;
             profileToEdit.userEmail= req.body.userEmail;
-            profileToEdit.userCategory= req.body.userCategory,
-            profileToEdit.userPassword= req.body.userPassword;
+            profileToEdit.userCategory= (req.body.userCategory)?req.body.userCategory:profileToEdit.userCategory;
+            profileToEdit.userPassword= (req.body.userPassword)?req.body.userPassword:profileToEdit.userPassword;
             profileToEdit.userImage = (req.file)?req.file.filename:profileToEdit.userImage;
             
         let profilesJSON=JSON.stringify(profiles, null, 2);

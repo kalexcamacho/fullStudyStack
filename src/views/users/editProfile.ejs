@@ -33,8 +33,10 @@
                     <div class="item-categorias">
                         <select name="userCategory" class="item-categorias2">
                             <option value="" class="categoria-particular">Tipo de Usuario</option>
-                            <option value="student" class="categoria-particular">Estudiante</option>
-                            <option value="teacher" class="categoria-particular">Profesor</option>
+                            <% let categories=['Student', 'Teacher' ] %>
+                            <% categories.forEach(specificCategory=> { %>
+                                <option value="<%= specificCategory %>" class="categoria-particular"><%= specificCategory %></option>
+                            <% }) %>
                         </select>
                     </div>
                 </div>

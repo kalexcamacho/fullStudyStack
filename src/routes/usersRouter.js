@@ -4,7 +4,7 @@ const router = express.Router();
 const multer = require ('multer');
 const path = require('path');
 const usersController = require('../controllers/usersController');
-const registerValidations = require('../middlewares/registerValidationsMiddlewares');
+const registerValidations = require('../middlewares/registerValidationsMiddleware');
 
 //---------------------------------------------- Multer Configurations -----------------------------------------------------------------------
 let storage = multer.diskStorage({

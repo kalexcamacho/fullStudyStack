@@ -70,5 +70,13 @@
     "productImage": "css.jpg",
     "productCategory": "desarrolloMovil",
     "productPrice": 115
+  },
+  {
+    "productId": 1648947667622,
+    "productName": "JavaScripttttttttttttttttttttttttttttttttt",
+    "productDescription": "Curso mega genial de Java Script para principiantes",
+    "productCategory": "Desarrollo web",
+    "productPrice": "200000",
+    "productImage": "sinImagen.png"
   }
 ]

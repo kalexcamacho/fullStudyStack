@@ -5,5 +5,12 @@
     "userEmail": "pepito@perez.com",
     "userPassword": "pepito23",
     "userImage": "profile_blank.png"
+  },
+  {
+    "userId": 1648613110312,
+    "userName": "Cesar",
+    "userEmail": "cesarcorregidor93@gmail.com",
+    "userImage": "1648613250354.PNG",
+    "userPassword": ""
   }
 ]

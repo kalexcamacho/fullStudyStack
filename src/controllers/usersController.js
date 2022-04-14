@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const {validationResult} = require('express-validator');
+const User = require('../../models/User');
+const { use } = require('express/lib/application');
 
 const productsFilePath = path.join(__dirname, '../data/dataBaseProducts.json');
 const profilesFilePath = path.join(__dirname, '../data/dataBaseProfiles.json');
@@ -37,19 +39,14 @@ const usersController = {
             return res.render('./users/register',{errors: errorsValidation.errors, oldData})
         }
         let newProfile = {
-            userId: Date.now(),
             userName: req.body.userName,
             userEmail: req.body.userEmail,
             userCategory: req.body.userCategory,
             userPassword: req.body.userPassword,
             userImage: (req.file)?req.file.filename:"profile_blank.png"	
 		}
-		profiles.push(newProfile);
-
-		let profilesJSON=JSON.stringify(profiles, null, 2);
-		fs.writeFileSync(profilesFilePath, profilesJSON);
-
-        res.redirect('/profile/' + newProfile.userId);
+        User.create(newProfile);
+        res.redirect('/profile/' + (User.generateId()-1));
     },
 
     editProfile: (req, res) =>{

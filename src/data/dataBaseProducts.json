@@ -56,14 +56,6 @@
     "productPrice": 200
   },
   {
-    "productId": 10,
-    "productName": "PHP",
-    "productDescription": "lorem ipsum",
-    "productImage": "1648156736151.png",
-    "productCategory": "desarrolloWeb",
-    "productPrice": "250"
-  },
-  {
     "productId": 11,
     "productName": "HTML",
     "productDescription": "lorem ipsum",
@@ -78,5 +70,13 @@
     "productImage": "css.jpg",
     "productCategory": "desarrolloMovil",
     "productPrice": 115
+  },
+  {
+    "productId": 1648947667622,
+    "productName": "JavaScripttttttttttttttttttttttttttttttttt",
+    "productDescription": "Curso mega genial de Java Script para principiantes",
+    "productCategory": "Desarrollo web",
+    "productPrice": "200000",
+    "productImage": "sinImagen.png"
   }
 ]

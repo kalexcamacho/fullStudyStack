@@ -1,16 +1,18 @@
 [
-  {
-    "userId": 1,
-    "userName": "Pepito Perez",
-    "userEmail": "pepito@perez.com",
-    "userPassword": "pepito23",
-    "userImage": "profile_blank.png"
-  },
-  {
-    "userId": 1648613110312,
-    "userName": "Cesar",
-    "userEmail": "cesarcorregidor93@gmail.com",
-    "userImage": "1648613250354.PNG",
-    "userPassword": ""
-  }
+ {
+  "userId": 1,
+  "userName": "Alexander Bernal",
+  "userEmail": "alex@bernal.com",
+  "userCategory": "Estudiante",
+  "userPassword": "hola",
+  "userImage": "1648934724613.jpg"
+ },
+ {
+  "userId": 2,
+  "userName": "Cesar",
+  "userEmail": "cesarcorregidor93@gmail.com",
+  "userCategory": "Estudiante",
+  "userPassword": "$2a$10$LsCvzHpvjEsYlsJPXbX7d.sylcidm7pCo4gV5WRQBUiXSou1fKdum",
+  "userImage": "profile_blank.png"
+ }
 ]

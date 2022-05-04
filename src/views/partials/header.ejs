@@ -11,9 +11,12 @@
 
         <div class="iconos-header">
             <a href="/"><i class="fas fa-home"></i></a>
-            <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
-            <a href="/login"><i class="fas fa-sign-in-alt"></i></a>
-            <a href="/profile/1"><i class="fas fa-user"></i></a>
+            <% if(!locals.isLogged) { %>             
+                <a href="/login"><i class="fas fa-sign-in-alt"></i></a>
+            <% } else { %> 
+                <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/profile"><i class="fas fa-user"></i></a>
+            <% } %> 
         </div>
     </div>
 </header>

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require ('multer');
 const path = require('path');
+const productsValidations = require('../middlewares/productsValidationsMiddleware');
 
 //---------------------------------------------- productsRouter -----------------------------------------------------------------------
 
@@ -28,7 +29,7 @@ router.get('/productDetail/:id', productsController.productDetail);
 router.get('/productCart', productsController.productCart);
 
 router.get('/newProduct', productsController.newProduct);
-router.post('/newProduct', upload.single('productImage'), productsController.storeNewProduct);
+router.post('/newProduct', upload.single('productImage'), productsValidations, productsController.storeNewProduct);
 
 router.get('/modifyProduct/:id', productsController.modifyProduct);
 router.put('/modifyProduct/:id', upload.single('productImage'), productsController.updateModifiedProduct);

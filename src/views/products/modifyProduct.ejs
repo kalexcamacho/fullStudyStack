@@ -23,7 +23,7 @@
                     Imagen
                 </label>
                 <div class="productImage">
-                    <input type="file" name="productImage" class="item-productImage" multiple required>
+                    <input type="file" name="productImage" class="item-productImage" multiple>
                 </div>
                 
             </div>
@@ -33,11 +33,14 @@
                 </label>
                 <div class="item-categorias">
                     <select name="productCategory" class="item-categorias2">
-                        <option value="desarrolloWeb" class="categoria-particular">Desarrollo web</option>
-                        <option value="desarrolloMovil" class="categoria-particular">Desarrollo Móvil</option>
-                        <option value="ciberseguridad" class="categoria-particular">Ciberseguridad</option>
-                        <option value="cienciaDeDatos" class="categoria-particular">Ciencia de datos</option>
-                        <option value="inteligenciaArtificial" class="categoria-particular">Inteligencia Artificial</option>
+                        <option value="" class="categoria-particular">Seleccione una Categoría</option>
+                        <% let categories=['Desarrollo web', 'Desarrollo Móvil' , 'Ciberseguridad'
+                                    , 'Ciencia de datos' , 'Inteligencia Artificial'] %>
+                        <% categories.forEach(specificCategory=> { %>
+                            <option value="<%= specificCategory %>" class="categoria-particular">
+                                <%= specificCategory %>
+                            </option>
+                        <% }) %>
                     </select>
                     
                 </div>

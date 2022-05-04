@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
-<body class="body-newProduct">
-    <%- include('../partials/header') %>
-    <main class="main-newProduct">
-        <form action="/newProduct" method="POST" enctype="multipart/form-data">
-            <div class="items-new-product">
-                <label class="productName">
-                    Nombre del producto
-                </label>
-                <input type="text" name="productName" placeholder="Curso Genial .  .  ." class="item">
-            </div>
-            <div class="items-new-product">
-                <label>
-                    Descripción
-                </label>
-                <input type="text" name="productDescription" placeholder="En este curso aprenderás .  .  ." class="item">
-                <p class="mensaje-alerta"></p>
-            </div>
-            <div class="items-new-product">
-                <label>
-                    Imagen
-                </label>
-                <div class="productImage">
-                    <input type="file" name="productImage" class="item-productImage">
-                </div>
-                
-            </div>
-            <div class="items-new-product">
-                <label>
-                    Categoría
-                </label>
-                <div class="item-categorias">
-                    <select name="productCategory" class="item-categorias2">
-                        <option value="desarrolloWeb" class="categoria-particular">Desarrollo web</option>
-                        <option value="desarrolloMovil" class="categoria-particular">Desarrollo Móvil</option>
-                        <option value="ciberseguridad" class="categoria-particular">Ciberseguridad</option>
-                        <option value="cienciaDeDatos" class="categoria-particular">Ciencia de datos</option>
-                        <option value="inteligenciaArtificial" class="categoria-particular">Inteligencia Artificial</option>
-                    </select>
-                    
-                </div>
-            </div>
-            <div class="items-new-product">
-                <label>
-                    Precio
-                </label>
-                <input type="text" name="productPrice" placeholder="COP .  .  ." class="item">
-            </div>
-            <div class="items-new-product">
-                <button type="submit" class="button-crear-curso"> Crear curso </button>
-            </div>            
-        </form>
-    </main>
-    <%- include('../partials/footer') %>
-</body>
+<%- include('../partials/head') %>
+
+    <body class="body-newProduct">
+        <%- include('../partials/header') %>
+        <% function showError (param){ %>
+            <p class="">
+                <% if (typeof errors !="undefined" ) { %>
+                    <% errors.forEach(specificError=> { %>
+                        <% if (specificError.param===param ) { %>
+                            <%= specificError.msg %>
+                        <% } %>
+                    <% }) %>
+                <% } %>
+            </p>
+        <% } %>
+
+            <main class="main-newProduct">
+                <form action="/newProduct" method="POST" enctype="multipart/form-data">
+                    <div class="items-new-product">
+                        <label class="productName">
+                            Nombre del producto
+                        </label>
+                        <input type="text" name="productName" placeholder="Curso Genial .  .  ." class="item"
+                        value="<%= locals.oldData?oldData.productName:null %>">
+                        <% showError('productName') %>
+                    </div>
+                    <div class="items-new-product">
+                        <label>
+                            Descripción
+                        </label>
+                        <input type="text" name="productDescription" placeholder="En este curso aprenderás .  .  ."
+                            class="item" value="<%= locals.oldData?oldData.productDescription:null %>">
+                    </div>
+                    <div class="items-new-product">
+                        <label>
+                            Imagen
+                        </label>
+                        <div class="productImage">
+                            <input type="file" name="productImage" class="item-productImage">
+                        </div>
+
+                    </div>
+                    <div class="items-new-product">
+                        <label>
+                            Categoría
+                        </label>
+                        <div class="item-categorias">
+                            <select name="productCategory" class="item-categorias2">
+                                <option value="" class="categoria-particular">Seleccione una Categoría</option>
+                                <% let categories=['Desarrollo web', 'Desarrollo Móvil' , 'Ciberseguridad'
+                                    , 'Ciencia de datos' , 'Inteligencia Artificial'] %>
+                                <% categories.forEach(specificCategory=> { %>
+                                    <option value="<%= specificCategory %>" class="categoria-particular" <%=(locals.oldData &&
+                                            (specificCategory===oldData.productCategory))?'selected':null %>><%= specificCategory %>
+                                    </option>
+                                <% }) %>
+                            </select>
+                            <% showError('productCategory') %>
+                        </div>
+                    </div>
+                    <div class="items-new-product">
+                        <label>
+                            Precio
+                        </label>
+                        <input type="text" name="productPrice" placeholder="COP .  .  ." class="item"
+                        value="<%= locals.oldData?oldData.productPrice:null %>">
+                        <% showError('productPrice') %>
+                    </div>
+                    <div class="items-new-product">
+                        <button type="submit" class="button-crear-curso"> Crear curso </button>
+                    </div>
+                </form>
+            </main>
+            <%- include('../partials/footer') %>
+    </body>
+
 </html>

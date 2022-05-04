@@ -7,13 +7,19 @@
     <%- include('../partials/header') %>  
     
     <main class="main-login">
-        <form action="/" method="GET">
+        <form action="/login" method="POST">
             <div class="items-formulario">
                 <label>
                     Email:
                 </label>
                 <input type="email" name="email" placeholder="example@email.com" class="item">
-                <p class="mensaje-alerta"></p>
+                <% if (locals.errors && errors.email) { %> 
+                    <p class="mensaje-alerta"> 
+                        
+                        <%= errors.email.msg %> 
+                    </p>
+                <% } %> 
+                
             </div>
             <div class="items-formulario">
                 <label>
